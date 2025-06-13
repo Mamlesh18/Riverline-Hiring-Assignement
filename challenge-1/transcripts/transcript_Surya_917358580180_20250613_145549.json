@@ -1,0 +1,151 @@
+{
+  "session_id": "room-vxFzE7hsEudy",
+  "call_details": {
+    "phone_number": "+917358580180",
+    "debtor_name": "Surya",
+    "debt_amount": 15000.0,
+    "days_overdue": 5,
+    "call_start_time": "2025-06-13T14:54:45.109517",
+    "call_end_time": "2025-06-13T14:55:49.901140",
+    "call_duration": "0:01:04.791623"
+  },
+  "real_time_transcript": [
+    {
+      "timestamp": "2025-06-13T14:55:07.097456",
+      "speaker": "user",
+      "text": "Yes.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-13T14:55:08.068022",
+      "speaker": "user",
+      "text": "Yeah. Sure. You can talk",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-13T14:55:09.058149",
+      "speaker": "user",
+      "text": "Yeah. Sure. You can talk to me what happened.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-13T14:55:09.224958",
+      "speaker": "user",
+      "text": "Yeah. Sure. You can talk to me what happened.",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-13T14:55:19.164111",
+      "speaker": "user",
+      "text": "Yeah. That's fine.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-13T14:55:20.229617",
+      "speaker": "user",
+      "text": "Yeah. That's fine. I can't ping you",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-13T14:55:21.204668",
+      "speaker": "user",
+      "text": "Yeah. That's fine. I can ping you tomorrow.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-13T14:55:21.365299",
+      "speaker": "user",
+      "text": "Yeah. That's fine. I can ping you tomorrow.",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent"
+    }
+  ],
+  "conversation_items": [
+    {
+      "timestamp": "2025-06-13T14:55:04.628907",
+      "type": "message",
+      "content": "id='item_b20949e7058f' type='message' role='assistant' content=['Hello, may I speak with Surya? This is Sarah calling from SecureBank regarding your credit card bill.\\n'] interrupted=False hash=None created_at=1749806696.7883537",
+      "role": "assistant"
+    },
+    {
+      "timestamp": "2025-06-13T14:55:09.384077",
+      "type": "message",
+      "content": "id='item_23d1e388e03a' type='message' role='user' content=['Yeah. Sure. You can talk to me what happened.'] interrupted=False hash=None created_at=1749806709.3830748",
+      "role": "user"
+    },
+    {
+      "timestamp": "2025-06-13T14:55:18.428578",
+      "type": "message",
+      "content": "id='item_dd4150fd5668' type='message' role='assistant' content=[\"Hi Surya, I'm just calling to gently remind you that your credit card bill of ₹15,000.00 is currently 5 days overdue. If there's anything\"] interrupted=True hash=None created_at=1749806709.3910854",
+      "role": "assistant"
+    },
+    {
+      "timestamp": "2025-06-13T14:55:21.607914",
+      "type": "message",
+      "content": "id='item_29b898b371a3' type='message' role='user' content=[\"Yeah. That's fine. I can ping you tomorrow.\"] interrupted=False hash=None created_at=1749806721.6069078",
+      "role": "user"
+    },
+    {
+      "timestamp": "2025-06-13T14:55:26.526861",
+      "type": "message",
+      "content": "id='item_df356f91e58c' type='message' role='assistant' content=['Thank you for your time, Surya. We appreciate it. Have a great day!\\n'] interrupted=False hash=None created_at=1749806721.6159108",
+      "role": "assistant"
+    }
+  ],
+  "complete_history": {
+    "items": [
+      {
+        "id": "item_b20949e7058f",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hello, may I speak with Surya? This is Sarah calling from SecureBank regarding your credit card bill.\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_23d1e388e03a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Yeah. Sure. You can talk to me what happened."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_dd4150fd5668",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hi Surya, I'm just calling to gently remind you that your credit card bill of ₹15,000.00 is currently 5 days overdue. If there's anything"
+        ],
+        "interrupted": true
+      },
+      {
+        "id": "item_29b898b371a3",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Yeah. That's fine. I can ping you tomorrow."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_df356f91e58c",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Thank you for your time, Surya. We appreciate it. Have a great day!\n"
+        ],
+        "interrupted": false
+      }
+    ]
+  }
+}

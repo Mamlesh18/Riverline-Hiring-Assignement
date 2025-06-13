@@ -1,0 +1,42 @@
+{
+  "session_id": "room-MWxvGvodCcvJ",
+  "call_details": {
+    "phone_number": "+917358580180",
+    "debtor_name": "Surya",
+    "debt_amount": 15000.0,
+    "days_overdue": 5,
+    "call_start_time": "2025-06-13T15:45:27.449149",
+    "call_end_time": "2025-06-13T15:45:48.065081",
+    "call_duration": "0:00:20.615932"
+  },
+  "real_time_transcript": [
+    {
+      "timestamp": "2025-06-13T15:45:47.942473",
+      "speaker": "user",
+      "text": "Yeah.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    }
+  ],
+  "conversation_items": [
+    {
+      "timestamp": "2025-06-13T15:45:46.066416",
+      "type": "message",
+      "content": "id='item_95e879160cec' type='message' role='assistant' content=['Hello, may I speak with Surya? This is Sarah calling from SecureBank regarding your credit card bill.\\n'] interrupted=False hash=None created_at=1749809739.2914479",
+      "role": "assistant"
+    }
+  ],
+  "complete_history": {
+    "items": [
+      {
+        "id": "item_95e879160cec",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hello, may I speak with Surya? This is Sarah calling from SecureBank regarding your credit card bill.\n"
+        ],
+        "interrupted": false
+      }
+    ]
+  }
+}

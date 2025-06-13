@@ -1,0 +1,9 @@
+{
+  "sip_trunk_id": "ST_YPEDLrHnQRh2",
+  "sip_call_to": "+917358580180",
+  "room_name": "autodial-room",
+  "participant_identity": "phone_user",
+  "participant_name": "Called User",
+  "wait_until_answered": true,
+  "play_dialtone": true
+}

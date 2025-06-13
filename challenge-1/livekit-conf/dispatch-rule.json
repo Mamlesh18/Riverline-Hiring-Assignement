@@ -1,0 +1,9 @@
+{
+  "trunk_ids": ["ST_YPEDLrHnQRh2"],
+  "rule": {
+    "dispatchRuleDirect": {
+      "roomName": "open-room",
+      "pin": "12345"
+    }
+  }
+}

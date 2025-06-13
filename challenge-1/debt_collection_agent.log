@@ -1,0 +1,140 @@
+2025-06-13 15:44:54,213 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-13 15:44:54,220 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:44:54,228 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-13 15:44:59,544 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:44:59,549 - livekit.agents - INFO - starting worker
+2025-06-13 15:44:59,550 - livekit.agents - INFO - starting inference executor
+2025-06-13 15:44:59,607 - livekit.agents - INFO - initializing process
+2025-06-13 15:45:04,922 - livekit.agents - DEBUG - initializing inference runner
+2025-06-13 15:45:04,922 - livekit.agents - DEBUG - initializing inference runner
+2025-06-13 15:45:07,316 - pydot - DEBUG - pydot initializing
+2025-06-13 15:45:07,317 - pydot - DEBUG - pydot 3.0.4
+2025-06-13 15:45:07,316 - pydot - DEBUG - pydot initializing
+2025-06-13 15:45:07,317 - pydot - DEBUG - pydot 3.0.4
+2025-06-13 15:45:07,374 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-13 15:45:07,374 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-13 15:45:07,378 - pydot.core - DEBUG - pydot core module initializing
+2025-06-13 15:45:07,378 - pydot.core - DEBUG - pydot core module initializing
+2025-06-13 15:45:16,326 - livekit.agents - DEBUG - inference runner initialized
+2025-06-13 15:45:16,326 - livekit.agents - DEBUG - inference runner initialized
+2025-06-13 15:45:16,327 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:45:16,327 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:45:16,332 - livekit.agents - INFO - [1msee tracing information at http://localhost:60285/debug[0m
+2025-06-13 15:45:16,497 - livekit.agents - INFO - registered worker
+2025-06-13 15:45:25,630 - livekit.agents - INFO - received job request
+2025-06-13 15:45:25,662 - livekit.agents - INFO - initializing job runner
+2025-06-13 15:45:25,663 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:45:25,664 - livekit.agents - INFO - job runner initialized
+2025-06-13 15:45:26,062 - debt_collection_agent - INFO - Creating agent session with configured models
+2025-06-13 15:45:27,448 - debt_collection_agent - INFO - Agent session created successfully
+2025-06-13 15:45:27,455 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-06-13 15:45:28,127 - livekit.agents - DEBUG - start reading stream
+2025-06-13 15:45:39,279 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-13 15:45:39,908 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-13 15:45:50,633 - livekit.agents - DEBUG - received user transcript
+2025-06-13 15:45:50,812 - livekit.plugins.turn_detector - DEBUG - eou prediction
+2025-06-13 15:45:50,817 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-13 15:45:52,537 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-13 15:46:02,228 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:46:02,234 - livekit.agents - INFO - starting worker
+2025-06-13 15:46:02,236 - livekit.agents - INFO - starting inference executor
+2025-06-13 15:46:02,240 - livekit.agents - ERROR - Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\streams.py", line 748, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+2025-06-13 15:46:02,317 - livekit.agents - INFO - initializing process
+2025-06-13 15:46:10,231 - watchfiles.main - WARNING - process already dead, exit code: 1
+2025-06-13 15:46:11,429 - watchfiles.main - WARNING - process already dead, exit code: 1
+2025-06-13 15:46:18,570 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:46:18,575 - livekit.agents - INFO - starting worker
+2025-06-13 15:46:18,576 - livekit.agents - INFO - starting inference executor
+2025-06-13 15:46:18,638 - livekit.agents - INFO - initializing process
+2025-06-13 15:46:40,293 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:46:40,299 - livekit.agents - INFO - starting worker
+2025-06-13 15:46:40,300 - livekit.agents - INFO - starting inference executor
+2025-06-13 15:46:40,361 - livekit.agents - INFO - initializing process
+2025-06-13 15:46:56,322 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:46:56,327 - livekit.agents - INFO - starting worker
+2025-06-13 15:46:56,328 - livekit.agents - INFO - starting inference executor
+2025-06-13 15:46:56,389 - livekit.agents - INFO - initializing process
+2025-06-13 15:47:01,700 - livekit.agents - DEBUG - initializing inference runner
+2025-06-13 15:47:01,700 - livekit.agents - DEBUG - initializing inference runner
+2025-06-13 15:47:04,011 - pydot - DEBUG - pydot initializing
+2025-06-13 15:47:04,011 - pydot - DEBUG - pydot 3.0.4
+2025-06-13 15:47:04,011 - pydot - DEBUG - pydot initializing
+2025-06-13 15:47:04,011 - pydot - DEBUG - pydot 3.0.4
+2025-06-13 15:47:04,068 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-13 15:47:04,068 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-13 15:47:04,072 - pydot.core - DEBUG - pydot core module initializing
+2025-06-13 15:47:04,072 - pydot.core - DEBUG - pydot core module initializing
+2025-06-13 15:47:12,854 - livekit.agents - DEBUG - inference runner initialized
+2025-06-13 15:47:12,856 - livekit.agents - INFO - process initialized
+2025-06-13 15:47:12,855 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:47:12,854 - livekit.agents - DEBUG - inference runner initialized
+2025-06-13 15:47:12,855 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:47:12,861 - livekit.agents - INFO - [1msee tracing information at http://localhost:60386/debug[0m
+2025-06-13 15:47:13,001 - livekit.agents - INFO - registered worker
+2025-06-13 15:47:39,233 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:47:39,240 - livekit.agents - INFO - starting worker
+2025-06-13 15:47:39,241 - livekit.agents - INFO - starting inference executor
+2025-06-13 15:47:39,329 - livekit.agents - INFO - initializing process
+2025-06-13 15:47:45,833 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:47:45,840 - livekit.agents - INFO - starting worker
+2025-06-13 15:47:45,841 - livekit.agents - INFO - starting inference executor
+2025-06-13 15:47:45,907 - livekit.agents - INFO - initializing process
+2025-06-13 15:47:55,761 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:47:55,767 - livekit.agents - INFO - starting worker
+2025-06-13 15:47:55,768 - livekit.agents - INFO - starting inference executor
+2025-06-13 15:47:55,824 - livekit.agents - INFO - initializing process
+2025-06-13 15:48:06,049 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:48:06,055 - livekit.agents - INFO - starting worker
+2025-06-13 15:48:06,056 - livekit.agents - INFO - starting inference executor
+2025-06-13 15:48:06,113 - livekit.agents - INFO - initializing process
+2025-06-13 15:48:11,509 - livekit.agents - DEBUG - initializing inference runner
+2025-06-13 15:48:11,509 - livekit.agents - DEBUG - initializing inference runner
+2025-06-13 15:48:13,872 - pydot - DEBUG - pydot initializing
+2025-06-13 15:48:13,872 - pydot - DEBUG - pydot 3.0.4
+2025-06-13 15:48:13,872 - pydot - DEBUG - pydot initializing
+2025-06-13 15:48:13,872 - pydot - DEBUG - pydot 3.0.4
+2025-06-13 15:48:13,930 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-13 15:48:13,930 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-13 15:48:13,933 - pydot.core - DEBUG - pydot core module initializing
+2025-06-13 15:48:13,933 - pydot.core - DEBUG - pydot core module initializing
+2025-06-13 15:48:22,850 - livekit.agents - DEBUG - inference runner initialized
+2025-06-13 15:48:22,850 - livekit.agents - DEBUG - inference runner initialized
+2025-06-13 15:48:22,851 - livekit.agents - INFO - process initialized
+2025-06-13 15:48:22,850 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:48:22,850 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-13 15:48:22,857 - livekit.agents - INFO - [1msee tracing information at http://localhost:60441/debug[0m
+2025-06-13 15:48:23,017 - livekit.agents - INFO - registered worker
+2025-06-13 15:48:28,255 - livekit.agents - INFO - shutting down worker
+2025-06-13 15:48:28,255 - asyncio - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2025-06-13 15:48:28,258 - livekit.agents - INFO - process exiting
+2025-06-13 15:48:29,828 - livekit.agents - WARNING - exiting forcefully

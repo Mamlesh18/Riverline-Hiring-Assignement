@@ -1,0 +1,193 @@
+{
+  "session_id": "room-6UaSWhHiUUsm",
+  "call_details": {
+    "phone_number": "+917358580180",
+    "debtor_name": "Surya",
+    "debt_amount": 15000.0,
+    "days_overdue": 5,
+    "call_start_time": "2025-06-13T15:02:21.903741",
+    "trunk_id": "ST_YPEDLrHnQRh2",
+    "room_name": "room-6UaSWhHiUUsm",
+    "call_end_time": "2025-06-13T15:03:45.984898",
+    "call_duration_seconds": 84.081157
+  },
+  "real_time_transcript": [
+    {
+      "timestamp": "2025-06-13T15:02:41.714449",
+      "speaker": "agent",
+      "text": "Hello, may I speak with Surya? This is Sarah calling from SecureBank regarding your credit card bill.",
+      "is_final": true,
+      "event_type": "agent_response"
+    },
+    {
+      "timestamp": "2025-06-13T15:02:44.474168",
+      "speaker": "user",
+      "text": "Yeah. Sure. Like,",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:02:45.400082",
+      "speaker": "user",
+      "text": "Yeah. Sure. Like, speak with me.",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:02:59.214694",
+      "speaker": "user",
+      "text": "Yeah.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:03:00.201559",
+      "speaker": "user",
+      "text": "Yeah. I show the tax",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:03:00.663507",
+      "speaker": "user",
+      "text": "Yeah. I show that. Actually,",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:03:01.649613",
+      "speaker": "user",
+      "text": "forgot to, like,",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:03:02.667081",
+      "speaker": "user",
+      "text": "pay",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:03:03.662140",
+      "speaker": "user",
+      "text": "pay it. Uh, thank you for reminding",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:03:04.420398",
+      "speaker": "user",
+      "text": "pay it. Uh, thank you for reminding a little bit.",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:03:05.437173",
+      "speaker": "user",
+      "text": "Tomorrow. Okay? Is that",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:03:05.957032",
+      "speaker": "user",
+      "text": "Tomorrow. Okay? Is that fine?",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:03:15.370859",
+      "speaker": "user",
+      "text": "Thank you for",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:03:16.354523",
+      "speaker": "user",
+      "text": "Thank you for calling. Bye.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    },
+    {
+      "timestamp": "2025-06-13T15:03:16.521750",
+      "speaker": "user",
+      "text": "Thank you for calling. Bye.",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent",
+      "confidence": null
+    }
+  ],
+  "conversation_items": [
+    {
+      "timestamp": "2025-06-13T15:02:41.712446",
+      "type": "message",
+      "content": "id='item_b849e52510b5' type='message' role='assistant' content=['Hello, may I speak with Surya? This is Sarah calling from SecureBank regarding your credit card bill.\\n'] interrupted=False hash=None created_at=1749807153.8841133",
+      "role": "assistant",
+      "id": "item_b849e52510b5"
+    },
+    {
+      "timestamp": "2025-06-13T15:02:45.406122",
+      "type": "message",
+      "content": "id='item_80d2eda07d36' type='message' role='user' content=['Yeah. Sure. Like, speak with me.'] interrupted=False hash=None created_at=1749807165.4034102",
+      "role": "user",
+      "id": "item_80d2eda07d36"
+    },
+    {
+      "timestamp": "2025-06-13T15:02:59.384484",
+      "type": "message",
+      "content": "id='item_b6e1fd27aef2' type='message' role='assistant' content=[\"Great, I'm speaking with Surya then? I'm just calling to gently remind you that your credit card bill of ₹15,000.00 is currently 5 days overdue. If there's anything we can help with or if you'd like payment details again, I'd be happy\"] interrupted=True hash=None created_at=1749807165.415438",
+      "role": "assistant",
+      "id": "item_b6e1fd27aef2"
+    },
+    {
+      "timestamp": "2025-06-13T15:03:05.974714",
+      "type": "message",
+      "content": "id='item_db03e3a025db' type='message' role='user' content=['Yeah. I show that. Actually, forgot to, like, pay it. Uh, thank you for reminding a little bit. Tomorrow. Okay? Is that fine?'] interrupted=False hash=None created_at=1749807185.9747145",
+      "role": "user",
+      "id": "item_db03e3a025db"
+    },
+    {
+      "timestamp": "2025-06-13T15:03:12.581002",
+      "type": "message",
+      "content": "id='item_20eafe116c7c' type='message' role='assistant' content=[\"That's perfectly fine, Surya. Thank you for letting me know. We appreciate it. Have a great day!\\n\"] interrupted=False hash=None created_at=1749807185.9816864",
+      "role": "assistant",
+      "id": "item_20eafe116c7c"
+    },
+    {
+      "timestamp": "2025-06-13T15:03:16.564901",
+      "type": "message",
+      "content": "id='item_66db6ffc2629' type='message' role='user' content=['Thank you for calling. Bye.'] interrupted=False hash=None created_at=1749807196.564901",
+      "role": "user",
+      "id": "item_66db6ffc2629"
+    },
+    {
+      "timestamp": "2025-06-13T15:03:22.691785",
+      "type": "message",
+      "content": "id='item_90f9f298073c' type='message' role='assistant' content=['Thank you for your time, Surya. We appreciate it. Have a great day!\\n'] interrupted=False hash=None created_at=1749807196.57437",
+      "role": "assistant",
+      "id": "item_90f9f298073c"
+    }
+  ],
+  "audio_recordings": [],
+  "recording_metadata": {
+    "created_at": "2025-06-13T15:02:21.905400",
+    "format": "wav",
+    "sample_rate": 48000,
+    "channels": 2
+  }
+}
