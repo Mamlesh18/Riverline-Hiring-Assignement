@@ -24,17 +24,17 @@ class DebtCollectionConfig:
     CONNECTION_TIMEOUT = 10
     INITIAL_SLEEP = 4
     
-    DEFAULT_PHONE_NUMBER = "+917358580180"
+    DEFAULT_PHONE_NUMBER = "+ PHONE_NUMBER_PLACEHOLDER"
     DEFAULT_DEBTOR_NAME = "Surya"
     DEFAULT_DEBT_AMOUNT = 5000.0
     DEFAULT_DAYS_OVERDUE = 5
     
     TRANSCRIPT_SAVE_INTERVAL = 30  
     TRANSCRIPT_DIR = "transcripts"
-    S3_BUCKET = "myawsbuckettrialvoiceagent"
+    S3_BUCKET = "S3_BUCKET_NAME_PLACEHOLDER"
     S3_REGION = "us-east-1"
-    S3_ACCESS_KEY = "AKIAXXBX5OS3GQGU7P4A"
-    S3_SECRET_KEY = "/p4/9Ikiiks/5w09D8YBaAolz4Y1vJoMBRQa7CW3"
+    S3_ACCESS_KEY = "S3_ACCESS_KEY_PLACEHOLDER"
+    S3_SECRET_KEY = "S3_SECRET_KEY"
     @classmethod
     def validate_config(cls):
         """Validate required configuration"""

@@ -21,7 +21,7 @@ class TranscriptionManager:
             },
             "real_time_transcript": [],
             "conversation_items": [],
-            "clean_conversation": []  # New clean format
+            "clean_conversation": [] 
         }
         self.debtor_name = debtor_name
         self.phone_number = phone_number
@@ -29,24 +29,20 @@ class TranscriptionManager:
     def extract_clean_content(self, content_str):
         """Extract clean content from the content string"""
         try:
-            # Handle different content formats
             if isinstance(content_str, list):
                 return ' '.join(str(item) for item in content_str)
             
             content_str = str(content_str)
             
-            # Extract content from the string format
-            # Look for content=['...'] pattern
+           
             content_match = re.search(r"content=\['([^']+)'\]", content_str)
             if content_match:
                 return content_match.group(1).replace('\\n', '').strip()
             
-            # Look for content=["..."] pattern  
             content_match = re.search(r'content=\["([^"]+)"\]', content_str)
             if content_match:
                 return content_match.group(1).replace('\\n', '').strip()
             
-            # If no pattern matches, return the original string
             return content_str.strip()
             
         except Exception as e:
@@ -59,7 +55,6 @@ class TranscriptionManager:
             role = getattr(event.item, 'role', 'unknown')
             content = self.extract_clean_content(str(event.item))
             
-            # Add to detailed log
             item_data = {
                 "timestamp": datetime.now().isoformat(),
                 "type": event.item.type if hasattr(event.item, 'type') else "unknown",
@@ -68,7 +63,6 @@ class TranscriptionManager:
             }
             self.transcript_data["conversation_items"].append(item_data)
             
-            # Add to clean conversation format
             clean_item = {
                 "speaker": "agent" if role == "assistant" else "user",
                 "message": content,
@@ -76,7 +70,6 @@ class TranscriptionManager:
             }
             self.transcript_data["clean_conversation"].append(clean_item)
             
-            # Print clean format
             speaker_label = "Agent" if role == "assistant" else "User"
             print(f"[{speaker_label}]: {content}")
             
@@ -105,7 +98,6 @@ class TranscriptionManager:
             }
             self.transcript_data["real_time_transcript"].append(transcription_data)
             
-            # Only print final transcriptions to avoid spam
             if getattr(event, 'is_final', True):
                 print(f"[USER SPEECH]: {text_content}")
                 
@@ -136,7 +128,6 @@ class TranscriptionManager:
                 )
             )
             
-            # Try to get session history if available
             if session:
                 try:
                     if hasattr(session, 'history'):
@@ -144,20 +135,17 @@ class TranscriptionManager:
                 except Exception as history_error:
                     print(f"Could not get session history: {history_error}")
             
-            # Generate safe filename
             safe_name = re.sub(r'[^\w\-_\.]', '_', self.debtor_name)
             filename = (
                 f"transcript_{safe_name}_"
                 f"{self.phone_number.replace('+', '')}_{current_date}.json"
             )
             
-            # Also save a simple text version
             simple_filename = (
                 f"simple_transcript_{safe_name}_"
                 f"{self.phone_number.replace('+', '')}_{current_date}.txt"
             )
             
-            # Create transcript directory and file paths
             transcript_dir = os.path.join(os.getcwd(), 
                                           DebtCollectionConfig.TRANSCRIPT_DIR)
             filepath = os.path.join(transcript_dir, filename)
@@ -165,11 +153,9 @@ class TranscriptionManager:
             
             os.makedirs(transcript_dir, exist_ok=True)
             
-            # Save detailed transcript
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(self.transcript_data, f, indent=2, ensure_ascii=False)
             
-            # Save simple transcript
             simple_content = self.generate_simple_transcript()
             with open(simple_filepath, 'w', encoding='utf-8') as f:
                 f.write("Call Details:\n")
@@ -185,7 +171,6 @@ class TranscriptionManager:
             print(f"✅ Transcript saved: {filepath}")
             print(f"✅ Simple transcript saved: {simple_filepath}")
             
-            # Print the clean conversation to console
             print(f"\n{'='*50}")
             print("FINAL CONVERSATION SUMMARY:")
             print(f"{'='*50}")

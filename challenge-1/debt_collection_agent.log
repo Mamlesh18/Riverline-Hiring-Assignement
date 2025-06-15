@@ -371,3 +371,235 @@ livekit.agents.utils.aio.duplex_unix.DuplexClosed
 2025-06-15 18:44:13,568 - livekit.agents - INFO - [1msee tracing information at http://localhost:51109/debug[0m
 2025-06-15 18:44:13,681 - livekit.agents - INFO - registered worker
 2025-06-15 18:56:20,369 - livekit.agents - INFO - shutting down worker
+2025-06-15 19:20:14,588 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-15 19:20:14,596 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 19:20:14,601 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-15 19:20:19,278 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 19:20:19,284 - livekit.agents - INFO - starting worker
+2025-06-15 19:20:19,290 - livekit.agents - INFO - [1msee tracing information at http://localhost:51686/debug[0m
+2025-06-15 19:20:19,412 - livekit.agents - INFO - registered worker
+2025-06-15 19:20:39,597 - livekit.agents - INFO - received job request
+2025-06-15 19:20:39,622 - livekit.agents - INFO - initializing job runner
+2025-06-15 19:20:39,624 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 19:20:39,624 - livekit.agents - INFO - job runner initialized
+2025-06-15 19:20:41,251 - debt_collection_agent - INFO - Recording started with egress ID: EG_HBQcaVdchXpL
+2025-06-15 19:20:41,669 - debt_collection_agent - INFO - Creating agent session with configured models
+2025-06-15 19:20:42,864 - debt_collection_agent - INFO - Agent session created successfully
+2025-06-15 19:20:42,876 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-06-15 19:20:43,656 - livekit.agents - DEBUG - start reading stream
+2025-06-15 19:20:57,366 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 19:20:59,080 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 19:21:10,378 - livekit.agents - DEBUG - received user transcript
+2025-06-15 19:21:10,389 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 19:21:12,061 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 19:21:27,033 - livekit.agents - DEBUG - received user transcript
+2025-06-15 19:21:27,117 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 19:21:28,754 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 19:21:40,871 - livekit.agents - DEBUG - received user transcript
+2025-06-15 19:21:41,773 - livekit.agents - DEBUG - received user transcript
+2025-06-15 19:21:41,807 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 19:21:43,578 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 19:21:58,877 - livekit.agents - DEBUG - received user transcript
+2025-06-15 19:21:58,897 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 19:21:59,438 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 19:22:04,767 - livekit.agents - DEBUG - closing agent session due to participant disconnect
+2025-06-15 19:22:04,769 - livekit.agents - DEBUG - stream closed
+2025-06-15 19:22:04,777 - livekit.agents - DEBUG - session closed
+2025-06-15 19:22:24,894 - livekit.agents - DEBUG - shutting down job task
+2025-06-15 19:22:24,897 - livekit.agents - DEBUG - job exiting
+2025-06-15 19:22:24,900 - livekit - WARNING - livekit::rtc_engine:450:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+2025-06-15 19:22:24,907 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-06-15 19:23:10,303 - livekit.agents - INFO - received job request
+2025-06-15 19:23:10,330 - livekit.agents - INFO - initializing job runner
+2025-06-15 19:23:10,331 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 19:23:10,332 - livekit.agents - INFO - job runner initialized
+2025-06-15 19:23:12,014 - debt_collection_agent - INFO - Recording started with egress ID: EG_Pbejgt3idXYy
+2025-06-15 19:23:12,323 - debt_collection_agent - INFO - Creating agent session with configured models
+2025-06-15 19:23:12,909 - debt_collection_agent - INFO - Agent session created successfully
+2025-06-15 19:23:12,915 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-06-15 19:23:13,573 - livekit.agents - DEBUG - start reading stream
+2025-06-15 19:23:23,245 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 19:23:24,985 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 19:23:35,768 - livekit.agents - DEBUG - received user transcript
+2025-06-15 19:23:35,776 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 19:23:37,482 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 19:23:47,065 - livekit.agents - DEBUG - received user transcript
+2025-06-15 19:23:47,812 - livekit.agents - DEBUG - received user transcript
+2025-06-15 19:23:47,829 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 19:23:48,635 - livekit.agents - DEBUG - received user transcript
+2025-06-15 19:23:48,658 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 19:23:49,244 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 19:23:57,294 - livekit.agents - DEBUG - received user transcript
+2025-06-15 19:23:57,301 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 19:23:57,580 - livekit.agents - DEBUG - stream closed
+2025-06-15 19:23:57,582 - livekit.agents - DEBUG - closing agent session due to participant disconnect
+2025-06-15 19:23:57,596 - livekit.agents - DEBUG - session closed
+2025-06-15 19:24:19,897 - livekit.agents - DEBUG - shutting down job task
+2025-06-15 19:24:19,900 - livekit.agents - DEBUG - job exiting
+2025-06-15 19:24:19,905 - livekit - WARNING - livekit::rtc_engine:450:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+2025-06-15 19:24:19,912 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-06-15 21:22:13,337 - livekit.agents - WARNING - failed to connect to livekit, retrying in 0s
+Traceback (most recent call last):
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\worker.py", line 693, in _connection_task
+    await self._run_ws(ws)
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\worker.py", line 774, in _run_ws
+    await asyncio.gather(*tasks)
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\worker.py", line 737, in _recv_task
+    msg = await ws.receive()
+          ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\client_ws.py", line 378, in receive
+    await self.pong(msg.data)
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\client_ws.py", line 234, in pong
+    await self._writer.send_frame(message, WSMsgType.PONG)
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\_websocket\writer.py", line 125, in send_frame
+    raise ClientConnectionResetError("Cannot write to closing transport")
+aiohttp.client_exceptions.ClientConnectionResetError: Cannot write to closing transport
+2025-06-15 21:22:13,745 - livekit.agents - WARNING - failed to connect to livekit, retrying in 2s
+Traceback (most recent call last):
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 868, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\worker.py", line 654, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host riverline-ij23yty9.livekit.cloud:443 ssl:default [getaddrinfo failed]
+2025-06-15 21:22:15,791 - livekit.agents - WARNING - failed to connect to livekit, retrying in 4s
+Traceback (most recent call last):
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 868, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 962, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\worker.py", line 654, in _connection_task
+    ws = await self._http_session.ws_connect(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\aiohttp\connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host riverline-ij23yty9.livekit.cloud:443 ssl:default [getaddrinfo failed]
+2025-06-15 21:22:19,956 - livekit.agents - INFO - registered worker
+2025-06-15 21:56:10,611 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 21:56:10,618 - livekit.agents - INFO - starting worker
+2025-06-15 21:56:10,624 - livekit.agents - INFO - [1msee tracing information at http://localhost:54027/debug[0m
+2025-06-15 21:56:10,753 - livekit.agents - INFO - registered worker
+2025-06-15 21:56:10,625 - livekit.agents - ERROR - Error in _read_ipc_task
+Traceback (most recent call last):
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\streams.py", line 748, in readexactly
+    raise exceptions.IncompleteReadError(incomplete, n)
+asyncio.exceptions.IncompleteReadError: 0 bytes read on a total of 4 expected bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\utils\log.py", line 16, in async_fn_logs
+    return await fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\cli\watcher.py", line 120, in _read_ipc_task
+    msg = await channel.arecv_message(self._pch, proto.IPC_MESSAGES)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
+    raise DuplexClosed() from e
+livekit.agents.utils.aio.duplex_unix.DuplexClosed
+2025-06-15 21:56:24,182 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 21:56:24,186 - livekit.agents - INFO - starting worker
+2025-06-15 21:56:24,191 - livekit.agents - INFO - [1msee tracing information at http://localhost:54035/debug[0m
+2025-06-15 21:56:24,324 - livekit.agents - INFO - registered worker
+2025-06-15 21:56:34,435 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 21:56:34,440 - livekit.agents - INFO - starting worker
+2025-06-15 21:56:34,444 - livekit.agents - INFO - [1msee tracing information at http://localhost:54043/debug[0m
+2025-06-15 21:56:34,605 - livekit.agents - INFO - registered worker
+2025-06-15 22:00:45,995 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 22:00:46,001 - livekit.agents - INFO - starting worker
+2025-06-15 22:00:46,006 - livekit.agents - INFO - [1msee tracing information at http://localhost:54113/debug[0m
+2025-06-15 22:00:46,141 - livekit.agents - INFO - registered worker
+2025-06-15 22:02:18,690 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 22:02:18,695 - livekit.agents - INFO - starting worker
+2025-06-15 22:02:18,700 - livekit.agents - INFO - [1msee tracing information at http://localhost:54154/debug[0m
+2025-06-15 22:02:18,836 - livekit.agents - INFO - registered worker
+2025-06-15 22:02:30,063 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 22:02:30,068 - livekit.agents - INFO - starting worker
+2025-06-15 22:02:30,072 - livekit.agents - INFO - [1msee tracing information at http://localhost:54162/debug[0m
+2025-06-15 22:02:30,205 - livekit.agents - INFO - registered worker
+2025-06-15 22:03:01,160 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 22:03:01,167 - livekit.agents - INFO - starting worker
+2025-06-15 22:03:01,172 - livekit.agents - INFO - [1msee tracing information at http://localhost:54178/debug[0m
+2025-06-15 22:03:01,308 - livekit.agents - INFO - registered worker
+2025-06-15 22:03:19,944 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 22:03:19,950 - livekit.agents - INFO - starting worker
+2025-06-15 22:03:19,956 - livekit.agents - INFO - [1msee tracing information at http://localhost:54191/debug[0m
+2025-06-15 22:03:20,084 - livekit.agents - INFO - registered worker

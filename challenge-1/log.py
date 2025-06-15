@@ -1,6 +1,5 @@
 import logging
 
-# Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -10,5 +9,4 @@ logging.basicConfig(
     ]
 )
 
-# Get the actual logger
 logger = logging.getLogger("debt_collection_agent")

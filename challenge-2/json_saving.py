@@ -32,7 +32,6 @@ class JSONSaver:
             return filepath
         except Exception as e:
             logger.error(f"Error saving results to JSON: {e}")
-            # Fallback to original location
             try:
                 with open('voice_agent_test_results.json', 'w') as f:
                     json.dump(results, f, indent=2)

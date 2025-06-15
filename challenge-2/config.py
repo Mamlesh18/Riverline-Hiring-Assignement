@@ -27,7 +27,7 @@ class Config:
         try:
             api_key = os.getenv('GEMINI_API_KEY')
             if not api_key:
-                api_key = "AIzaSyDRSGM-6OyP0BwEuhnFn_II0CwdeQYK1Lw"
+                api_key = "GEMINI_API_KEY_PLACEHOLDER"
                 logger.warning("Using hardcoded API key - consider setting GEMINI_API_KEY" \
                 " environment variable")
             return api_key

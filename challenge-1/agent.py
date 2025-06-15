@@ -164,7 +164,6 @@ async def entrypoint(ctx: agents.JobContext):
         logger.info(f"Recording started with egress ID: {res.egress_id}")
     except Exception as e:
         logger.error(f"Failed to start recording: {e}")
-        # Continue without recording rather than failing completely
     finally:
         await lkapi.aclose()
     await ctx.connect()
