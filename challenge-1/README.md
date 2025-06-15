@@ -12,17 +12,14 @@ Voice agent built using LiveKit integration with Deepgram STT/TTS and Gemini AI 
 
 ## Demo
 
-### Video Demo
-[Add video URL here]
-
-*Voice agent handling credit card payment reminder conversation with natural speech processing*
-
-### Screenshots
 #### Voice Agent with LiveKit Video Demo
-<video width="600" controls>
-  <source src="https://github.com/Mamlesh18/Riverline-Hiring-Assignement/raw/main/challenge-1/video-recordings/challenge_1.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<p align="center">
+  <video src="images/video.mp4" width="500px"></video>
+</p>
+
+<video src="video-recordings/challenge_1.mp4" width="320" height="240" controls></video>
+
+![non working video](video-recordings/challenge_1.mp4)
 
 *LiveKit agent dashboard showing active sessions, connection status, and real-time processing metrics*
 
