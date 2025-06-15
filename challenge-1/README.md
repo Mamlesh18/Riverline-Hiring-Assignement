@@ -14,7 +14,7 @@ Voice agent built using LiveKit integration with Deepgram STT/TTS and Gemini AI 
 
 #### Voice Agent with LiveKit Video Demo
 
-![Download  working video](video-recordings/challenge_1.mp4)
+![Kindly Download the working video demo](video-recordings/challenge_1.mp4)
 
 *LiveKit agent dashboard showing active sessions, connection status, and real-time processing metrics*
 
@@ -25,18 +25,6 @@ Voice agent built using LiveKit integration with Deepgram STT/TTS and Gemini AI 
 
 #### LiveKit Transcript Conversation
 ![Transcript Log](https://github.com/Mamlesh18/Riverline-Hiring-Assignement/blob/main/challenge-1/example/output_1.png)
-
-*Real-time conversation transcript with timestamps, speaker identification, and customer metadata*
-
-#### Voice Agent with LiveKit Audio Demo
-<audio controls>
-  <source src="audio-recordings/recording_1.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-<audio controls>
-  <source src="audio-recordings/recording_1.mp3" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
 
 *Real-time conversation transcript with timestamps, speaker identification, and customer metadata*
 
