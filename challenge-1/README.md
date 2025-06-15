@@ -19,18 +19,23 @@ Voice agent built using LiveKit integration with Deepgram STT/TTS and Gemini AI 
 
 ### Screenshots
 
-#### LiveKit Agent Dashboard
-![LiveKit Dashboard](screenshot-url-here)
+#### Voice Agent with LiveKit Video Demo
+![LiveKit Video demo](https://github.com/Mamlesh18/Riverline-Hiring-Assignement/blob/main/challenge-1/video-recordings/challenge_1.mp4)
 
 *LiveKit agent dashboard showing active sessions, connection status, and real-time processing metrics*
 
 #### AWS S3 Audio Storage
-![AWS S3 Storage](screenshot-url-here)
+![AWS S3 Storage](https://github.com/Mamlesh18/Riverline-Hiring-Assignement/blob/main/challenge-1/example/aws.png)
 
 *AWS S3 bucket with saved audio recordings organized by timestamp for conversation retrieval and analysis*
 
 #### LiveKit Transcript Conversation
-![Transcript Log](screenshot-url-here)
+![Transcript Log](https://github.com/Mamlesh18/Riverline-Hiring-Assignement/blob/main/challenge-1/example/output_1.png)
+
+*Real-time conversation transcript with timestamps, speaker identification, and customer metadata*
+
+#### Voice Agent with LiveKit Audio Demo
+![LiveKit Audio Demo](https://github.com/Mamlesh18/Riverline-Hiring-Assignement/blob/main/challenge-1/audio-recordings/recording_1.mp3)
 
 *Real-time conversation transcript with timestamps, speaker identification, and customer metadata*
 
@@ -55,35 +60,17 @@ lk dispatch create --new-room --agent-name telephony-agent --metadata '{"phone_n
 ├── transcription.py  # Real-time transcription handling
 ```
 
-### File Details
-
-#### `agent.py`
-Main LiveKit agent configuration with audio processing and AI integration
-
-#### `config.py`
-Environment variable loading and configuration management
-
-#### `prompt.py`
-Custom prompts for credit card payment reminder conversations
-
-#### `log.py`
-Logging system for debugging and monitoring
-
-#### `transcription.py`
-Real-time transcription saving and conversation storage
-
 ## Features
-- Real-time speech processing
-- Natural conversation flow
-- Audio recording storage
-- Transcript logging
-- Payment reminder automation
+- Real-time STT with deepgram
+- Natural conversation flow with deepgram TTS with
+- Audio recording storage in AWS S3 Bucket
+- Transcript logging in json file
+- Payment reminder automation call scheudling
 
 ## Code Standards
 - Strict ruff linting
 - Virtual environment (venv)
 - LiveKit documentation compliance
-- Optimized implementation
 
 ## Setup
 1. Install dependencies in venv
