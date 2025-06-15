@@ -363,3 +363,11 @@ livekit.agents.utils.aio.duplex_unix.DuplexClosed
 2025-06-15 18:35:37,893 - livekit.agents - DEBUG - job exiting
 2025-06-15 18:35:37,901 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
 2025-06-15 18:41:19,398 - livekit.agents - INFO - shutting down worker
+2025-06-15 18:44:09,096 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-15 18:44:09,103 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 18:44:09,108 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-15 18:44:13,558 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 18:44:13,563 - livekit.agents - INFO - starting worker
+2025-06-15 18:44:13,568 - livekit.agents - INFO - [1msee tracing information at http://localhost:51109/debug[0m
+2025-06-15 18:44:13,681 - livekit.agents - INFO - registered worker
+2025-06-15 18:56:20,369 - livekit.agents - INFO - shutting down worker
