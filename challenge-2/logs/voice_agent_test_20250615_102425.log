@@ -1,0 +1,11 @@
+2025-06-15 10:24:25,804 - voice_agent_tester - WARNING - Using hardcoded API key - consider setting GEMINI_API_KEY environment variable
+2025-06-15 10:24:25,804 - voice_agent_tester - INFO - Configuration loaded successfully
+2025-06-15 10:24:25,825 - voice_agent_tester - INFO - JSONSaver initialized successfully
+2025-06-15 10:24:26,533 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 10:24:26,534 - voice_agent_tester - INFO - Generated 6 customer personas
+2025-06-15 10:24:26,534 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 10:24:26,541 - voice_agent_tester - INFO - MetricsAnalyzer initialized successfully
+2025-06-15 10:24:26,542 - voice_agent_tester - INFO - ConversationSimulator initialized successfully
+2025-06-15 10:24:26,542 - voice_agent_tester - INFO - VoiceAgentTester initialized successfully
+2025-06-15 10:24:26,543 - voice_agent_tester - INFO - Generated system instructions for user: Rajesh Kumar
+2025-06-15 10:24:29,478 - voice_agent_tester - INFO - API response generated successfully

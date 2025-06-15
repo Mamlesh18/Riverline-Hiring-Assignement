@@ -1,0 +1,23 @@
+2025-06-15 12:07:25,084 - voice_agent_tester - INFO - Configuration loaded successfully
+2025-06-15 12:07:25,126 - voice_agent_tester - INFO - JSONSaver initialized successfully
+2025-06-15 12:07:27,742 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 12:07:27,743 - voice_agent_tester - INFO - Generated 6 customer personas
+2025-06-15 12:07:27,743 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 12:07:27,743 - voice_agent_tester - INFO - MetricsAnalyzer initialized successfully
+2025-06-15 12:07:27,743 - voice_agent_tester - INFO - ConversationSimulator initialized successfully
+2025-06-15 12:07:27,745 - voice_agent_tester - INFO - VoiceAgentTester initialized successfully
+2025-06-15 12:07:27,747 - voice_agent_tester - INFO - Generated system instructions for user: Rajesh Kumar
+2025-06-15 12:07:30,690 - voice_agent_tester - INFO - API response generated successfully
+2025-06-15 12:07:33,656 - voice_agent_tester - INFO - API response generated successfully
+2025-06-15 12:07:36,856 - voice_agent_tester - INFO - API response generated successfully
+2025-06-15 12:07:39,849 - voice_agent_tester - INFO - API response generated successfully
+2025-06-15 12:07:43,001 - voice_agent_tester - INFO - API response generated successfully
+2025-06-15 12:07:45,996 - voice_agent_tester - INFO - API response generated successfully
+2025-06-15 12:07:47,999 - voice_agent_tester - INFO - API response generated successfully
+2025-06-15 12:07:51,084 - voice_agent_tester - INFO - API response generated successfully
+2025-06-15 12:07:54,092 - voice_agent_tester - INFO - API response generated successfully
+2025-06-15 12:07:55,094 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 12:07:57,802 - voice_agent_tester - INFO - API response generated successfully
+2025-06-15 12:07:57,805 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 12:07:57,805 - voice_agent_tester - INFO - Conversation simulation completed for Rajesh Kumar
+2025-06-15 12:07:57,807 - voice_agent_tester - INFO - Generated system instructions for user: Priya Sharma
