@@ -16,7 +16,7 @@
 
 #### Self-Correction Triggered After Metric Failure
 
-![AWS S3 Storage]([screenshot-url-here](https://github.com/Mamlesh18/Riverline-Hiring-Assignement/blob/main/challenge-2/example/output_2.png))
+![AWS S3 Storage](https://github.com/Mamlesh18/Riverline-Hiring-Assignement/blob/main/challenge-2/example/output_2.png)
 
 
 
