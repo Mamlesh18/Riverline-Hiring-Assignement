@@ -1,4 +1,4 @@
-# Challenge 3: Self-correcting Voice Agents
+# Challenge 2: Self-correcting Voice Agents
 
 ## Overview
  Testing voice agents and implementing self-correction mechanisms for different types of failure scenarios. When a metric fails during a session, the agent intelligently updates its prompt to adapt and respond more accurately in future interactions.
