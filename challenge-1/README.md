@@ -20,8 +20,10 @@ Voice agent built using LiveKit integration with Deepgram STT/TTS and Gemini AI 
 ### Screenshots
 
 #### Voice Agent with LiveKit Video Demo
-![LiveKit Video demo](https://github.com/Mamlesh18/Riverline-Hiring-Assignement/blob/main/challenge-1/video-recordings/challenge_1.mp4)
-
+<video width="600" controls>
+  <source src="https://github.com/Mamlesh18/Riverline-Hiring-Assignement/raw/main/challenge-1/video-recordings/challenge_1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 *LiveKit agent dashboard showing active sessions, connection status, and real-time processing metrics*
 
 #### AWS S3 Audio Storage
@@ -35,7 +37,10 @@ Voice agent built using LiveKit integration with Deepgram STT/TTS and Gemini AI 
 *Real-time conversation transcript with timestamps, speaker identification, and customer metadata*
 
 #### Voice Agent with LiveKit Audio Demo
-![LiveKit Audio Demo](https://github.com/Mamlesh18/Riverline-Hiring-Assignement/blob/main/challenge-1/audio-recordings/recording_1.mp3)
+<audio controls>
+  <source src="https://github.com/Mamlesh18/Riverline-Hiring-Assignement/raw/main/challenge-1/audio-recordings/recording_1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 *Real-time conversation transcript with timestamps, speaker identification, and customer metadata*
 
