@@ -20,22 +20,66 @@ class TranscriptionManager:
                 "call_start_time": datetime.now().isoformat()
             },
             "real_time_transcript": [],
-            "conversation_items": []
+            "conversation_items": [],
+            "clean_conversation": []  # New clean format
         }
         self.debtor_name = debtor_name
         self.phone_number = phone_number
     
+    def extract_clean_content(self, content_str):
+        """Extract clean content from the content string"""
+        try:
+            # Handle different content formats
+            if isinstance(content_str, list):
+                return ' '.join(str(item) for item in content_str)
+            
+            content_str = str(content_str)
+            
+            # Extract content from the string format
+            # Look for content=['...'] pattern
+            content_match = re.search(r"content=\['([^']+)'\]", content_str)
+            if content_match:
+                return content_match.group(1).replace('\\n', '').strip()
+            
+            # Look for content=["..."] pattern  
+            content_match = re.search(r'content=\["([^"]+)"\]', content_str)
+            if content_match:
+                return content_match.group(1).replace('\\n', '').strip()
+            
+            # If no pattern matches, return the original string
+            return content_str.strip()
+            
+        except Exception as e:
+            print(f"Error extracting content: {e}")
+            return str(content_str)
+    
     def log_conversation_item(self, event):
         """Log conversation items as they're added"""
         try:
+            role = getattr(event.item, 'role', 'unknown')
+            content = self.extract_clean_content(str(event.item))
+            
+            # Add to detailed log
             item_data = {
                 "timestamp": datetime.now().isoformat(),
                 "type": event.item.type if hasattr(event.item, 'type') else "unknown",
                 "content": str(event.item),
-                "role": getattr(event.item, 'role', 'unknown')
+                "role": role
             }
             self.transcript_data["conversation_items"].append(item_data)
-            print(f"[CONVERSATION] {item_data['role']}: {item_data['content']}")
+            
+            # Add to clean conversation format
+            clean_item = {
+                "speaker": "agent" if role == "assistant" else "user",
+                "message": content,
+                "timestamp": datetime.now().isoformat()
+            }
+            self.transcript_data["clean_conversation"].append(clean_item)
+            
+            # Print clean format
+            speaker_label = "Agent" if role == "assistant" else "User"
+            print(f"[{speaker_label}]: {content}")
+            
         except Exception as e:
             print(f"Error logging conversation item: {e}")
     
@@ -60,10 +104,24 @@ class TranscriptionManager:
                 "event_type": type(event).__name__
             }
             self.transcript_data["real_time_transcript"].append(transcription_data)
-            print(f"[USER SPEECH]: {text_content}")
+            
+            # Only print final transcriptions to avoid spam
+            if getattr(event, 'is_final', True):
+                print(f"[USER SPEECH]: {text_content}")
+                
         except Exception as e:
             print(f"Error logging user transcription: {e}")
-            print(f"Event attributes: {dir(event)}")
+    
+    def generate_simple_transcript(self):
+        """Generate simple transcript format"""
+        simple_transcript = []
+        
+        for item in self.transcript_data["clean_conversation"]:
+            speaker = item["speaker"].capitalize()
+            message = item["message"]
+            simple_transcript.append(f"{speaker}: {message}")
+        
+        return "\n".join(simple_transcript)
     
     async def save_transcript(self, session=None):
         """Save complete transcript"""
@@ -82,8 +140,7 @@ class TranscriptionManager:
             if session:
                 try:
                     if hasattr(session, 'history'):
-                        self.transcript_data["complete_history"] =(
-                             session.history.to_dict())
+                        self.transcript_data["complete_history"] = session.history.to_dict()
                 except Exception as history_error:
                     print(f"Could not get session history: {history_error}")
             
@@ -94,18 +151,46 @@ class TranscriptionManager:
                 f"{self.phone_number.replace('+', '')}_{current_date}.json"
             )
             
-            # Create transcript directory and file path
+            # Also save a simple text version
+            simple_filename = (
+                f"simple_transcript_{safe_name}_"
+                f"{self.phone_number.replace('+', '')}_{current_date}.txt"
+            )
+            
+            # Create transcript directory and file paths
             transcript_dir = os.path.join(os.getcwd(), 
                                           DebtCollectionConfig.TRANSCRIPT_DIR)
             filepath = os.path.join(transcript_dir, filename)
+            simple_filepath = os.path.join(transcript_dir, simple_filename)
             
             os.makedirs(transcript_dir, exist_ok=True)
             
-            # Save transcript
+            # Save detailed transcript
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(self.transcript_data, f, indent=2, ensure_ascii=False)
             
+            # Save simple transcript
+            simple_content = self.generate_simple_transcript()
+            with open(simple_filepath, 'w', encoding='utf-8') as f:
+                f.write("Call Details:\n")
+                f.write(f"Debtor: {self.debtor_name}\n")
+                f.write(f"Phone: {self.phone_number}\n")
+                f.write(f"Amount: ₹{self.transcript_data['call_details']['debt_amount']}\n")
+                f.write(f"Days Overdue: {self.transcript_data['call_details']['days_overdue']}\n")
+                f.write(f"\n{'='*50}\n")
+                f.write("CONVERSATION:\n")
+                f.write(f"{'='*50}\n\n")
+                f.write(simple_content)
+            
             print(f"✅ Transcript saved: {filepath}")
+            print(f"✅ Simple transcript saved: {simple_filepath}")
+            
+            # Print the clean conversation to console
+            print(f"\n{'='*50}")
+            print("FINAL CONVERSATION SUMMARY:")
+            print(f"{'='*50}")
+            print(simple_content)
+            print(f"{'='*50}\n")
             
         except Exception as e:
             print(f"❌ Error saving transcript: {e}")

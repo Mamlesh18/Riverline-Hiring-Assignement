@@ -31,7 +31,10 @@ class DebtCollectionConfig:
     
     TRANSCRIPT_SAVE_INTERVAL = 30  
     TRANSCRIPT_DIR = "transcripts"
-    
+    S3_BUCKET = "myawsbuckettrialvoiceagent"
+    S3_REGION = "us-east-1"
+    S3_ACCESS_KEY = "AKIAXXBX5OS3GQGU7P4A"
+    S3_SECRET_KEY = "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"
     @classmethod
     def validate_config(cls):
         """Validate required configuration"""

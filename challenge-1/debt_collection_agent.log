@@ -1,44 +1,52 @@
-2025-06-13 15:44:54,213 - debt_collection_agent - INFO - Starting debt collection telephony agent...
-2025-06-13 15:44:54,220 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:44:54,228 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
-2025-06-13 15:44:59,544 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:44:59,549 - livekit.agents - INFO - starting worker
-2025-06-13 15:44:59,550 - livekit.agents - INFO - starting inference executor
-2025-06-13 15:44:59,607 - livekit.agents - INFO - initializing process
-2025-06-13 15:45:04,922 - livekit.agents - DEBUG - initializing inference runner
-2025-06-13 15:45:04,922 - livekit.agents - DEBUG - initializing inference runner
-2025-06-13 15:45:07,316 - pydot - DEBUG - pydot initializing
-2025-06-13 15:45:07,317 - pydot - DEBUG - pydot 3.0.4
-2025-06-13 15:45:07,316 - pydot - DEBUG - pydot initializing
-2025-06-13 15:45:07,317 - pydot - DEBUG - pydot 3.0.4
-2025-06-13 15:45:07,374 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
-2025-06-13 15:45:07,374 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
-2025-06-13 15:45:07,378 - pydot.core - DEBUG - pydot core module initializing
-2025-06-13 15:45:07,378 - pydot.core - DEBUG - pydot core module initializing
-2025-06-13 15:45:16,326 - livekit.agents - DEBUG - inference runner initialized
-2025-06-13 15:45:16,326 - livekit.agents - DEBUG - inference runner initialized
-2025-06-13 15:45:16,327 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:45:16,327 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:45:16,332 - livekit.agents - INFO - [1msee tracing information at http://localhost:60285/debug[0m
-2025-06-13 15:45:16,497 - livekit.agents - INFO - registered worker
-2025-06-13 15:45:25,630 - livekit.agents - INFO - received job request
-2025-06-13 15:45:25,662 - livekit.agents - INFO - initializing job runner
-2025-06-13 15:45:25,663 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:45:25,664 - livekit.agents - INFO - job runner initialized
-2025-06-13 15:45:26,062 - debt_collection_agent - INFO - Creating agent session with configured models
-2025-06-13 15:45:27,448 - debt_collection_agent - INFO - Agent session created successfully
-2025-06-13 15:45:27,455 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
-2025-06-13 15:45:28,127 - livekit.agents - DEBUG - start reading stream
-2025-06-13 15:45:39,279 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
-2025-06-13 15:45:39,908 - google_genai.models - INFO - AFC remote call 1 is done.
-2025-06-13 15:45:50,633 - livekit.agents - DEBUG - received user transcript
-2025-06-13 15:45:50,812 - livekit.plugins.turn_detector - DEBUG - eou prediction
-2025-06-13 15:45:50,817 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
-2025-06-13 15:45:52,537 - google_genai.models - INFO - AFC remote call 1 is done.
-2025-06-13 15:46:02,228 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:46:02,234 - livekit.agents - INFO - starting worker
-2025-06-13 15:46:02,236 - livekit.agents - INFO - starting inference executor
-2025-06-13 15:46:02,240 - livekit.agents - ERROR - Error in _read_ipc_task
+2025-06-14 15:14:58,608 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-14 15:14:58,615 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:14:58,621 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-14 15:15:03,681 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:15:03,685 - livekit.agents - INFO - starting worker
+2025-06-14 15:15:03,687 - livekit.agents - INFO - starting inference executor
+2025-06-14 15:15:03,746 - livekit.agents - INFO - initializing process
+2025-06-14 15:15:08,807 - livekit.agents - DEBUG - initializing inference runner
+2025-06-14 15:15:08,807 - livekit.agents - DEBUG - initializing inference runner
+2025-06-14 15:15:11,052 - pydot - DEBUG - pydot initializing
+2025-06-14 15:15:11,052 - pydot - DEBUG - pydot 3.0.4
+2025-06-14 15:15:11,052 - pydot - DEBUG - pydot initializing
+2025-06-14 15:15:11,052 - pydot - DEBUG - pydot 3.0.4
+2025-06-14 15:15:11,118 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-14 15:15:11,118 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-14 15:15:11,122 - pydot.core - DEBUG - pydot core module initializing
+2025-06-14 15:15:11,122 - pydot.core - DEBUG - pydot core module initializing
+2025-06-14 15:15:33,766 - livekit.agents - INFO - killing process
+2025-06-14 15:15:33,767 - livekit.agents - ERROR - worker failed
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 500, in wait_for
+    return fut.result()
+           ^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\channel.py", line 47, in arecv_message
+    return _read_message(await dplx.recv_bytes(), messages)
+                         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
+    len_bytes = await self._reader.readexactly(4)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\streams.py", line 750, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\streams.py", line 543, in _wait_for_data
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\cli\_run.py", line 88, in _worker_run
+    await worker.run()
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\worker.py", line 409, in run
+    await self._inference_executor.initialize()
+  File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\supervised_proc.py", line 168, in initialize
+    init_res = await asyncio.wait_for(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 502, in wait_for
+    raise exceptions.TimeoutError() from exc
+TimeoutError
+2025-06-14 15:15:33,777 - livekit.agents - ERROR - Error in _read_ipc_task
 Traceback (most recent call last):
   File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 35, in recv_bytes
     len_bytes = await self._reader.readexactly(4)
@@ -62,79 +70,257 @@ Traceback (most recent call last):
   File "C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\utils\aio\duplex_unix.py", line 43, in recv_bytes
     raise DuplexClosed() from e
 livekit.agents.utils.aio.duplex_unix.DuplexClosed
-2025-06-13 15:46:02,317 - livekit.agents - INFO - initializing process
-2025-06-13 15:46:10,231 - watchfiles.main - WARNING - process already dead, exit code: 1
-2025-06-13 15:46:11,429 - watchfiles.main - WARNING - process already dead, exit code: 1
-2025-06-13 15:46:18,570 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:46:18,575 - livekit.agents - INFO - starting worker
-2025-06-13 15:46:18,576 - livekit.agents - INFO - starting inference executor
-2025-06-13 15:46:18,638 - livekit.agents - INFO - initializing process
-2025-06-13 15:46:40,293 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:46:40,299 - livekit.agents - INFO - starting worker
-2025-06-13 15:46:40,300 - livekit.agents - INFO - starting inference executor
-2025-06-13 15:46:40,361 - livekit.agents - INFO - initializing process
-2025-06-13 15:46:56,322 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:46:56,327 - livekit.agents - INFO - starting worker
-2025-06-13 15:46:56,328 - livekit.agents - INFO - starting inference executor
-2025-06-13 15:46:56,389 - livekit.agents - INFO - initializing process
-2025-06-13 15:47:01,700 - livekit.agents - DEBUG - initializing inference runner
-2025-06-13 15:47:01,700 - livekit.agents - DEBUG - initializing inference runner
-2025-06-13 15:47:04,011 - pydot - DEBUG - pydot initializing
-2025-06-13 15:47:04,011 - pydot - DEBUG - pydot 3.0.4
-2025-06-13 15:47:04,011 - pydot - DEBUG - pydot initializing
-2025-06-13 15:47:04,011 - pydot - DEBUG - pydot 3.0.4
-2025-06-13 15:47:04,068 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
-2025-06-13 15:47:04,068 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
-2025-06-13 15:47:04,072 - pydot.core - DEBUG - pydot core module initializing
-2025-06-13 15:47:04,072 - pydot.core - DEBUG - pydot core module initializing
-2025-06-13 15:47:12,854 - livekit.agents - DEBUG - inference runner initialized
-2025-06-13 15:47:12,856 - livekit.agents - INFO - process initialized
-2025-06-13 15:47:12,855 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:47:12,854 - livekit.agents - DEBUG - inference runner initialized
-2025-06-13 15:47:12,855 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:47:12,861 - livekit.agents - INFO - [1msee tracing information at http://localhost:60386/debug[0m
-2025-06-13 15:47:13,001 - livekit.agents - INFO - registered worker
-2025-06-13 15:47:39,233 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:47:39,240 - livekit.agents - INFO - starting worker
-2025-06-13 15:47:39,241 - livekit.agents - INFO - starting inference executor
-2025-06-13 15:47:39,329 - livekit.agents - INFO - initializing process
-2025-06-13 15:47:45,833 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:47:45,840 - livekit.agents - INFO - starting worker
-2025-06-13 15:47:45,841 - livekit.agents - INFO - starting inference executor
-2025-06-13 15:47:45,907 - livekit.agents - INFO - initializing process
-2025-06-13 15:47:55,761 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:47:55,767 - livekit.agents - INFO - starting worker
-2025-06-13 15:47:55,768 - livekit.agents - INFO - starting inference executor
-2025-06-13 15:47:55,824 - livekit.agents - INFO - initializing process
-2025-06-13 15:48:06,049 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:48:06,055 - livekit.agents - INFO - starting worker
-2025-06-13 15:48:06,056 - livekit.agents - INFO - starting inference executor
-2025-06-13 15:48:06,113 - livekit.agents - INFO - initializing process
-2025-06-13 15:48:11,509 - livekit.agents - DEBUG - initializing inference runner
-2025-06-13 15:48:11,509 - livekit.agents - DEBUG - initializing inference runner
-2025-06-13 15:48:13,872 - pydot - DEBUG - pydot initializing
-2025-06-13 15:48:13,872 - pydot - DEBUG - pydot 3.0.4
-2025-06-13 15:48:13,872 - pydot - DEBUG - pydot initializing
-2025-06-13 15:48:13,872 - pydot - DEBUG - pydot 3.0.4
-2025-06-13 15:48:13,930 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
-2025-06-13 15:48:13,930 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
-2025-06-13 15:48:13,933 - pydot.core - DEBUG - pydot core module initializing
-2025-06-13 15:48:13,933 - pydot.core - DEBUG - pydot core module initializing
-2025-06-13 15:48:22,850 - livekit.agents - DEBUG - inference runner initialized
-2025-06-13 15:48:22,850 - livekit.agents - DEBUG - inference runner initialized
-2025-06-13 15:48:22,851 - livekit.agents - INFO - process initialized
-2025-06-13 15:48:22,850 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:48:22,850 - asyncio - DEBUG - Using proactor: IocpProactor
-2025-06-13 15:48:22,857 - livekit.agents - INFO - [1msee tracing information at http://localhost:60441/debug[0m
-2025-06-13 15:48:23,017 - livekit.agents - INFO - registered worker
-2025-06-13 15:48:28,255 - livekit.agents - INFO - shutting down worker
-2025-06-13 15:48:28,255 - asyncio - ERROR - Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
-handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
-Traceback (most recent call last):
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\events.py", line 84, in _run
-    self._context.run(self._callback, *self._args)
-  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
-    self._sock.shutdown(socket.SHUT_RDWR)
-ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
-2025-06-13 15:48:28,258 - livekit.agents - INFO - process exiting
-2025-06-13 15:48:29,828 - livekit.agents - WARNING - exiting forcefully
+2025-06-14 15:16:32,622 - watchfiles.main - WARNING - process already dead, exit code: 0
+2025-06-14 15:16:38,033 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:16:38,038 - livekit.agents - INFO - starting worker
+2025-06-14 15:16:38,039 - livekit.agents - INFO - starting inference executor
+2025-06-14 15:16:38,094 - livekit.agents - INFO - initializing process
+2025-06-14 15:16:42,403 - livekit.agents - DEBUG - initializing inference runner
+2025-06-14 15:16:42,403 - livekit.agents - DEBUG - initializing inference runner
+2025-06-14 15:16:44,533 - pydot - DEBUG - pydot initializing
+2025-06-14 15:16:44,533 - pydot - DEBUG - pydot 3.0.4
+2025-06-14 15:16:44,533 - pydot - DEBUG - pydot initializing
+2025-06-14 15:16:44,533 - pydot - DEBUG - pydot 3.0.4
+2025-06-14 15:16:44,582 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-14 15:16:44,582 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-14 15:16:44,586 - pydot.core - DEBUG - pydot core module initializing
+2025-06-14 15:16:44,586 - pydot.core - DEBUG - pydot core module initializing
+2025-06-14 15:17:04,563 - livekit.agents - DEBUG - inference runner initialized
+2025-06-14 15:17:04,563 - livekit.agents - DEBUG - inference runner initialized
+2025-06-14 15:17:04,564 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:17:04,565 - livekit.agents - INFO - process initialized
+2025-06-14 15:17:04,564 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:17:04,571 - livekit.agents - INFO - [1msee tracing information at http://localhost:53809/debug[0m
+2025-06-14 15:17:04,728 - livekit.agents - INFO - registered worker
+2025-06-14 15:17:04,775 - livekit.agents - INFO - received job request
+2025-06-14 15:17:04,807 - livekit.agents - INFO - initializing job runner
+2025-06-14 15:17:04,809 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:17:04,809 - livekit.agents - INFO - job runner initialized
+2025-06-14 15:17:05,326 - debt_collection_agent - INFO - Creating agent session with configured models
+2025-06-14 15:17:08,584 - debt_collection_agent - INFO - Agent session created successfully
+2025-06-14 15:17:08,586 - livekit.agents - WARNING - Running <Task pending name='job_user_entrypoint' coro=<entrypoint() running at C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1\agent.py:179> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[_JobProc._run_job_task.<locals>.<lambda>() at C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:274, _JobProc._run_job_task.<locals>.log_exception() at C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:276]> took too long: 3.25 seconds
+2025-06-14 15:17:08,588 - livekit.agents - WARNING - Running <Task pending name='job_user_entrypoint' coro=<entrypoint() running at C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1\agent.py:179> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[_JobProc._run_job_task.<locals>.<lambda>() at C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:274, _JobProc._run_job_task.<locals>.log_exception() at C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:276]> took too long: 3.25 seconds
+2025-06-14 15:17:08,600 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-06-14 15:17:09,267 - livekit.agents - DEBUG - start reading stream
+2025-06-14 15:17:18,316 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:17:18,871 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:17:29,459 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:17:29,849 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:17:29,914 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:17:31,613 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:19:23,954 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-14 15:19:23,961 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:19:23,967 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-14 15:19:28,693 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:19:28,698 - livekit.agents - INFO - starting worker
+2025-06-14 15:19:28,698 - livekit.agents - INFO - starting inference executor
+2025-06-14 15:19:28,751 - livekit.agents - INFO - initializing process
+2025-06-14 15:19:33,175 - livekit.agents - DEBUG - initializing inference runner
+2025-06-14 15:19:33,175 - livekit.agents - DEBUG - initializing inference runner
+2025-06-14 15:19:35,176 - pydot - DEBUG - pydot initializing
+2025-06-14 15:19:35,177 - pydot - DEBUG - pydot 3.0.4
+2025-06-14 15:19:35,176 - pydot - DEBUG - pydot initializing
+2025-06-14 15:19:35,177 - pydot - DEBUG - pydot 3.0.4
+2025-06-14 15:19:35,223 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-14 15:19:35,223 - pydot.dot_parser - DEBUG - pydot dot_parser module initializing
+2025-06-14 15:19:35,226 - pydot.core - DEBUG - pydot core module initializing
+2025-06-14 15:19:35,226 - pydot.core - DEBUG - pydot core module initializing
+2025-06-14 15:19:43,146 - livekit.agents - DEBUG - inference runner initialized
+2025-06-14 15:19:43,146 - livekit.agents - DEBUG - inference runner initialized
+2025-06-14 15:19:43,147 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:19:43,147 - livekit.agents - INFO - process initialized
+2025-06-14 15:19:43,147 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:19:43,153 - livekit.agents - INFO - [1msee tracing information at http://localhost:53865/debug[0m
+2025-06-14 15:19:43,321 - livekit.agents - INFO - registered worker
+2025-06-14 15:19:51,703 - livekit.agents - INFO - received job request
+2025-06-14 15:19:51,735 - livekit.agents - INFO - initializing job runner
+2025-06-14 15:19:51,737 - livekit.agents - INFO - job runner initialized
+2025-06-14 15:19:51,738 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:19:53,459 - debt_collection_agent - INFO - Recording started with egress ID: EG_zmB28Beni4zt
+2025-06-14 15:19:53,859 - debt_collection_agent - INFO - Creating agent session with configured models
+2025-06-14 15:19:54,884 - debt_collection_agent - INFO - Agent session created successfully
+2025-06-14 15:19:54,896 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-06-14 15:19:55,558 - livekit.agents - DEBUG - start reading stream
+2025-06-14 15:20:04,782 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:20:06,477 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:20:16,749 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:20:17,409 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:20:17,417 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:20:17,927 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:20:35,955 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:20:35,963 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:20:36,694 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:20:40,213 - livekit.agents - DEBUG - stream closed
+2025-06-14 15:20:40,214 - livekit.agents - DEBUG - closing agent session due to participant disconnect
+2025-06-14 15:20:40,231 - livekit.agents - DEBUG - session closed
+2025-06-14 15:21:00,286 - livekit.agents - DEBUG - shutting down job task
+2025-06-14 15:21:00,290 - livekit.agents - DEBUG - job exiting
+2025-06-14 15:21:00,293 - livekit - WARNING - livekit::rtc_engine:450:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+2025-06-14 15:21:00,296 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-06-14 15:24:07,072 - livekit.agents - INFO - shutting down worker
+2025-06-14 15:24:07,075 - livekit.agents - INFO - process exiting
+2025-06-14 15:29:29,299 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-14 15:29:29,306 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:29:29,311 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-14 15:29:34,021 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:29:34,025 - livekit.agents - INFO - starting worker
+2025-06-14 15:29:34,030 - livekit.agents - INFO - [1msee tracing information at http://localhost:54047/debug[0m
+2025-06-14 15:29:34,157 - livekit.agents - INFO - registered worker
+2025-06-14 15:30:28,278 - livekit.agents - INFO - received job request
+2025-06-14 15:30:28,315 - livekit.agents - INFO - initializing job runner
+2025-06-14 15:30:28,316 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:30:28,317 - livekit.agents - INFO - job runner initialized
+2025-06-14 15:30:30,000 - debt_collection_agent - INFO - Recording started with egress ID: EG_9STSnVJUdTPh
+2025-06-14 15:30:30,324 - debt_collection_agent - INFO - Creating agent session with configured models
+2025-06-14 15:30:31,217 - debt_collection_agent - INFO - Agent session created successfully
+2025-06-14 15:30:31,223 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-06-14 15:30:32,048 - livekit.agents - DEBUG - start reading stream
+2025-06-14 15:30:40,661 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:30:42,388 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:30:52,689 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:30:52,696 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:30:54,398 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:31:14,084 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:31:14,090 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:31:14,693 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:31:29,785 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:31:29,792 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:31:31,540 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:31:42,122 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:31:42,127 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:31:43,859 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:31:49,404 - livekit.agents - DEBUG - closing agent session due to participant disconnect
+2025-06-14 15:31:49,406 - livekit.agents - DEBUG - stream closed
+2025-06-14 15:31:49,412 - livekit.agents - DEBUG - session closed
+2025-06-14 15:32:13,115 - livekit.agents - DEBUG - shutting down job task
+2025-06-14 15:32:13,118 - livekit.agents - DEBUG - job exiting
+2025-06-14 15:32:13,125 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-06-14 15:33:10,638 - livekit.agents - INFO - shutting down worker
+2025-06-14 15:38:50,607 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-14 15:38:50,616 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:38:50,624 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-14 15:38:56,130 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:38:56,137 - livekit.agents - INFO - starting worker
+2025-06-14 15:38:56,142 - livekit.agents - INFO - [1msee tracing information at http://localhost:54173/debug[0m
+2025-06-14 15:38:56,270 - livekit.agents - INFO - registered worker
+2025-06-14 15:38:56,314 - livekit.agents - INFO - received job request
+2025-06-14 15:38:56,343 - livekit.agents - INFO - initializing job runner
+2025-06-14 15:38:56,346 - livekit.agents - INFO - job runner initialized
+2025-06-14 15:38:56,346 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:38:58,194 - debt_collection_agent - INFO - Recording started with egress ID: EG_ufpZf6Lh5wRv
+2025-06-14 15:38:58,641 - debt_collection_agent - INFO - Creating agent session with configured models
+2025-06-14 15:38:59,652 - debt_collection_agent - INFO - Agent session created successfully
+2025-06-14 15:38:59,660 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-06-14 15:39:00,185 - livekit.agents - DEBUG - start reading stream
+2025-06-14 15:39:10,946 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:39:12,612 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:39:24,481 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:39:24,490 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:39:25,027 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:39:43,403 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:39:43,413 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:39:44,045 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:39:53,502 - livekit.agents - DEBUG - closing agent session due to participant disconnect
+2025-06-14 15:39:53,504 - livekit.agents - DEBUG - stream closed
+2025-06-14 15:39:53,512 - livekit.agents - DEBUG - session closed
+2025-06-14 15:39:56,198 - livekit.agents - INFO - shutting down worker
+2025-06-14 15:39:56,201 - livekit.agents - DEBUG - shutting down job task
+2025-06-14 15:39:56,202 - livekit.agents - DEBUG - job exiting
+2025-06-14 15:39:56,264 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-06-14 15:44:42,439 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-14 15:44:42,445 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:44:42,450 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-14 15:44:47,480 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:44:47,486 - livekit.agents - INFO - starting worker
+2025-06-14 15:44:47,489 - livekit.agents - INFO - [1msee tracing information at http://localhost:54291/debug[0m
+2025-06-14 15:44:47,619 - livekit.agents - INFO - registered worker
+2025-06-14 15:44:57,598 - livekit.agents - INFO - shutting down worker
+2025-06-14 15:45:20,804 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-14 15:45:20,811 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:45:20,816 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-14 15:45:25,836 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:45:25,843 - livekit.agents - INFO - starting worker
+2025-06-14 15:45:25,848 - livekit.agents - INFO - [1msee tracing information at http://localhost:54309/debug[0m
+2025-06-14 15:45:26,044 - livekit.agents - INFO - registered worker
+2025-06-14 15:45:26,087 - livekit.agents - INFO - received job request
+2025-06-14 15:45:26,116 - livekit.agents - INFO - initializing job runner
+2025-06-14 15:45:26,117 - livekit.agents - INFO - job runner initialized
+2025-06-14 15:45:26,118 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:45:28,460 - debt_collection_agent - INFO - Recording started with egress ID: EG_8oJo3qBrAcaF
+2025-06-14 15:45:28,801 - debt_collection_agent - INFO - Creating agent session with configured models
+2025-06-14 15:45:29,773 - debt_collection_agent - INFO - Agent session created successfully
+2025-06-14 15:45:29,780 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-06-14 15:45:30,426 - livekit.agents - DEBUG - start reading stream
+2025-06-14 15:45:43,282 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:45:43,859 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:45:57,066 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:45:57,072 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:45:58,803 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:46:10,334 - livekit.agents - DEBUG - stream closed
+2025-06-14 15:46:10,334 - livekit.agents - DEBUG - closing agent session due to participant disconnect
+2025-06-14 15:46:10,341 - livekit.agents - DEBUG - session closed
+2025-06-14 15:46:17,456 - livekit.agents - INFO - shutting down worker
+2025-06-14 15:46:17,460 - livekit.agents - DEBUG - shutting down job task
+2025-06-14 15:46:17,462 - livekit.agents - DEBUG - job exiting
+2025-06-14 15:46:17,497 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-06-14 15:46:27,073 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-14 15:46:27,080 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:46:27,085 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-14 15:46:31,679 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:46:31,684 - livekit.agents - INFO - starting worker
+2025-06-14 15:46:31,688 - livekit.agents - INFO - [1msee tracing information at http://localhost:54363/debug[0m
+2025-06-14 15:46:31,824 - livekit.agents - INFO - registered worker
+2025-06-14 15:46:38,127 - livekit.agents - INFO - received job request
+2025-06-14 15:46:38,159 - livekit.agents - INFO - initializing job runner
+2025-06-14 15:46:38,160 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:46:38,160 - livekit.agents - INFO - job runner initialized
+2025-06-14 15:46:39,887 - debt_collection_agent - INFO - Recording started with egress ID: EG_RoajQWWESSNK
+2025-06-14 15:46:40,274 - debt_collection_agent - INFO - Creating agent session with configured models
+2025-06-14 15:46:41,253 - debt_collection_agent - INFO - Agent session created successfully
+2025-06-14 15:46:41,262 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-06-14 15:46:41,932 - livekit.agents - DEBUG - start reading stream
+2025-06-14 15:46:49,739 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:46:50,339 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:47:03,870 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:47:03,876 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:47:04,415 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:47:09,979 - livekit.agents - DEBUG - closing agent session due to participant disconnect
+2025-06-14 15:47:09,981 - livekit.agents - DEBUG - stream closed
+2025-06-14 15:47:09,992 - livekit.agents - WARNING - rotate_segment called while previous segment is still being rotated
+2025-06-14 15:47:10,003 - livekit.agents - DEBUG - session closed
+2025-06-14 15:47:11,334 - livekit.agents - INFO - shutting down worker
+2025-06-14 15:47:11,336 - livekit.agents - DEBUG - shutting down job task
+2025-06-14 15:47:11,339 - livekit.agents - DEBUG - job exiting
+2025-06-14 15:47:11,380 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-06-14 15:48:00,193 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-14 15:48:00,199 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:48:00,208 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-14 15:48:05,416 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:48:05,421 - livekit.agents - INFO - starting worker
+2025-06-14 15:48:05,425 - livekit.agents - INFO - [1msee tracing information at http://localhost:54411/debug[0m
+2025-06-14 15:48:05,733 - livekit.agents - INFO - registered worker
+2025-06-14 15:48:10,750 - livekit.agents - INFO - received job request
+2025-06-14 15:48:10,779 - livekit.agents - INFO - initializing job runner
+2025-06-14 15:48:10,780 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-14 15:48:10,781 - livekit.agents - INFO - job runner initialized
+2025-06-14 15:48:12,346 - debt_collection_agent - INFO - Recording started with egress ID: EG_zAEr3QkJaEjg
+2025-06-14 15:48:12,995 - debt_collection_agent - INFO - Creating agent session with configured models
+2025-06-14 15:48:13,931 - debt_collection_agent - INFO - Agent session created successfully
+2025-06-14 15:48:13,939 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-06-14 15:48:14,618 - livekit.agents - DEBUG - start reading stream
+2025-06-14 15:48:27,148 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:48:27,820 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:48:38,004 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:48:38,022 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:48:39,786 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:48:51,115 - livekit.agents - DEBUG - received user transcript
+2025-06-14 15:48:51,121 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-14 15:48:52,837 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-14 15:49:00,301 - livekit.agents - DEBUG - closing agent session due to participant disconnect
+2025-06-14 15:49:00,302 - livekit.agents - DEBUG - stream closed
+2025-06-14 15:49:00,309 - livekit.agents - DEBUG - session closed
+2025-06-14 15:49:22,981 - livekit - WARNING - livekit::rtc_engine:450:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+2025-06-14 15:49:22,985 - livekit.agents - DEBUG - shutting down job task
+2025-06-14 15:49:22,987 - livekit.agents - DEBUG - job exiting
+2025-06-14 15:49:22,992 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-06-14 15:59:54,269 - livekit.agents - INFO - shutting down worker

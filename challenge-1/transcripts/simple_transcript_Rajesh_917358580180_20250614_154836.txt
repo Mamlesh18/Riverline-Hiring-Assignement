@@ -1,0 +1,11 @@
+Call Details:
+Debtor: Rajesh
+Phone: +917358580180
+Amount: ₹5000.0
+Days Overdue: 5
+
+==================================================
+CONVERSATION:
+==================================================
+
+Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Rajesh?

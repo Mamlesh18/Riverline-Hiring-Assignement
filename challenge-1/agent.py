@@ -5,7 +5,6 @@ import re
 from livekit import agents, api
 from livekit.agents import Agent, AgentSession
 from livekit.plugins import deepgram, google, silero
-from livekit.plugins.turn_detector.multilingual import MultilingualModel
 
 from config import DebtCollectionConfig
 from log import logger
@@ -106,7 +105,6 @@ async def create_session():
             vad=silero.VAD.load(
                 min_silence_duration=DebtCollectionConfig.VAD_MIN_SILENCE_DURATION
             ),
-            turn_detection=MultilingualModel(),
         )
         
         logger.info("Agent session created successfully")
@@ -145,6 +143,30 @@ async def make_sip_call(ctx, phone_number, debtor_name):
                 raise call_error
 
 async def entrypoint(ctx: agents.JobContext):
+    req = api.RoomCompositeEgressRequest(
+        room_name=ctx.room.name,
+        audio_only=True,
+        file_outputs=[api.EncodedFileOutput(
+            file_type=api.EncodedFileType.OGG,
+            filepath=f"livekit/debt-collection-{ctx.room.name}-{int(asyncio.get_event_loop().time())}.ogg",
+            s3=api.S3Upload(
+                bucket=DebtCollectionConfig.S3_BUCKET,
+                region=DebtCollectionConfig.S3_REGION,
+                access_key=DebtCollectionConfig.S3_ACCESS_KEY,
+                secret=DebtCollectionConfig.S3_SECRET_KEY,
+            ),
+        )],
+    )
+    
+    lkapi = api.LiveKitAPI()
+    try:
+        res = await lkapi.egress.start_room_composite_egress(req)
+        logger.info(f"Recording started with egress ID: {res.egress_id}")
+    except Exception as e:
+        logger.error(f"Failed to start recording: {e}")
+        # Continue without recording rather than failing completely
+    finally:
+        await lkapi.aclose()
     await ctx.connect()
     
     DebtCollectionConfig.validate_config()

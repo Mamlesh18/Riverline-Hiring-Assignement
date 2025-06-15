@@ -1,0 +1,164 @@
+{
+  "session_id": "room-SoRP3thizrdm",
+  "call_details": {
+    "phone_number": "+917358580180",
+    "debtor_name": "Rajesh",
+    "debt_amount": 5000.0,
+    "days_overdue": 5,
+    "call_start_time": "2025-06-14T15:48:13.932837",
+    "call_end_time": "2025-06-14T15:49:04.102008",
+    "call_duration": "0:00:50.169171"
+  },
+  "real_time_transcript": [
+    {
+      "timestamp": "2025-06-14T15:48:36.167322",
+      "speaker": "user",
+      "text": "Yeah. Yeah. Speaking.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-14T15:48:37.150216",
+      "speaker": "user",
+      "text": "Yeah. You're speaking with Rajesh. Tell me",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-14T15:48:38.004899",
+      "speaker": "user",
+      "text": "Yeah. You're speaking with Rajesh. Tell me what's the issue.",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-14T15:48:49.786144",
+      "speaker": "user",
+      "text": "Yeah. Sure. I",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-14T15:48:50.157602",
+      "speaker": "user",
+      "text": "Yeah. Sure. I can make the",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-14T15:48:51.113851",
+      "speaker": "user",
+      "text": "Yeah. Sure. I can make the payment today.",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent"
+    }
+  ],
+  "conversation_items": [
+    {
+      "timestamp": "2025-06-14T15:48:34.093508",
+      "type": "message",
+      "content": "id='item_4a19cb0ee391' type='message' role='assistant' content=['Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Rajesh?\\n'] interrupted=False hash=None created_at=1749896307.1580338",
+      "role": "assistant"
+    },
+    {
+      "timestamp": "2025-06-14T15:48:38.019101",
+      "type": "message",
+      "content": "id='item_bdf75fdb0d55' type='message' role='user' content=[\"Yeah. You're speaking with Rajesh. Tell me what's the issue.\"] interrupted=False hash=None created_at=1749896318.0179763",
+      "role": "user"
+    },
+    {
+      "timestamp": "2025-06-14T15:48:47.455229",
+      "type": "message",
+      "content": "id='item_d2b8b00ad43e' type='message' role='assistant' content=[\"I'm calling to remind you that your credit card bill of ₹5,000.00 is currently 5 days overdue. Are you able to make the payment today?\\n\"] interrupted=False hash=None created_at=1749896318.0271158",
+      "role": "assistant"
+    },
+    {
+      "timestamp": "2025-06-14T15:48:51.117718",
+      "type": "message",
+      "content": "id='item_ae1b91280f83' type='message' role='user' content=['Yeah. Sure. I can make the payment today.'] interrupted=False hash=None created_at=1749896331.1162875",
+      "role": "user"
+    },
+    {
+      "timestamp": "2025-06-14T15:48:58.005869",
+      "type": "message",
+      "content": "id='item_be5bada6352d' type='message' role='assistant' content=['Thank you so much for confirming. We really appreciate it. Have a wonderful day!\\n'] interrupted=False hash=None created_at=1749896331.1260188",
+      "role": "assistant"
+    }
+  ],
+  "clean_conversation": [
+    {
+      "speaker": "agent",
+      "message": "Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Rajesh?",
+      "timestamp": "2025-06-14T15:48:34.093508"
+    },
+    {
+      "speaker": "user",
+      "message": "Yeah. You're speaking with Rajesh. Tell me what's the issue.",
+      "timestamp": "2025-06-14T15:48:38.019101"
+    },
+    {
+      "speaker": "agent",
+      "message": "I'm calling to remind you that your credit card bill of ₹5,000.00 is currently 5 days overdue. Are you able to make the payment today?",
+      "timestamp": "2025-06-14T15:48:47.455229"
+    },
+    {
+      "speaker": "user",
+      "message": "Yeah. Sure. I can make the payment today.",
+      "timestamp": "2025-06-14T15:48:51.117718"
+    },
+    {
+      "speaker": "agent",
+      "message": "Thank you so much for confirming. We really appreciate it. Have a wonderful day!",
+      "timestamp": "2025-06-14T15:48:58.005869"
+    }
+  ],
+  "complete_history": {
+    "items": [
+      {
+        "id": "item_4a19cb0ee391",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Rajesh?\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_bdf75fdb0d55",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Yeah. You're speaking with Rajesh. Tell me what's the issue."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_d2b8b00ad43e",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "I'm calling to remind you that your credit card bill of ₹5,000.00 is currently 5 days overdue. Are you able to make the payment today?\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_ae1b91280f83",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Yeah. Sure. I can make the payment today."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_be5bada6352d",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Thank you so much for confirming. We really appreciate it. Have a wonderful day!\n"
+        ],
+        "interrupted": false
+      }
+    ]
+  }
+}
