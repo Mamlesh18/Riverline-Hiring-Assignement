@@ -11,12 +11,12 @@
 ### Screenshots
 
 #### Metrics Failing for a user
-![LiveKit Dashboard](screenshot-url-here)
+![LiveKit Dashboard](https://github.com/Mamlesh18/Riverline-Hiring-Assignement/blob/main/challenge-2/example/output_1.png)
 
 
 #### Self-Correction Triggered After Metric Failure
 
-![AWS S3 Storage](screenshot-url-here)
+![AWS S3 Storage]([screenshot-url-here](https://github.com/Mamlesh18/Riverline-Hiring-Assignement/blob/main/challenge-2/example/output_2.png))
 
 
 
