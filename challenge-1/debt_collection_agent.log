@@ -324,3 +324,42 @@ livekit.agents.utils.aio.duplex_unix.DuplexClosed
 2025-06-14 15:49:22,987 - livekit.agents - DEBUG - job exiting
 2025-06-14 15:49:22,992 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
 2025-06-14 15:59:54,269 - livekit.agents - INFO - shutting down worker
+2025-06-15 18:34:03,045 - debt_collection_agent - INFO - Starting debt collection telephony agent...
+2025-06-15 18:34:03,069 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 18:34:03,076 - livekit.agents - DEV - Watching C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1
+2025-06-15 18:34:08,074 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 18:34:08,080 - livekit.agents - INFO - starting worker
+2025-06-15 18:34:08,084 - livekit.agents - INFO - [1msee tracing information at http://localhost:50889/debug[0m
+2025-06-15 18:34:08,212 - livekit.agents - INFO - registered worker
+2025-06-15 18:34:13,721 - livekit.agents - INFO - received job request
+2025-06-15 18:34:13,746 - livekit.agents - INFO - initializing job runner
+2025-06-15 18:34:13,748 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-06-15 18:34:13,748 - livekit.agents - INFO - job runner initialized
+2025-06-15 18:34:15,446 - debt_collection_agent - INFO - Recording started with egress ID: EG_caCE4McpJwUX
+2025-06-15 18:34:15,788 - debt_collection_agent - INFO - Creating agent session with configured models
+2025-06-15 18:34:18,835 - debt_collection_agent - INFO - Agent session created successfully
+2025-06-15 18:34:18,837 - livekit.agents - WARNING - Running <Task pending name='job_user_entrypoint' coro=<entrypoint() running at C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1\agent.py:202> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[_JobProc._run_job_task.<locals>.<lambda>() at C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:274, _JobProc._run_job_task.<locals>.log_exception() at C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:276]> took too long: 3.05 seconds
+2025-06-15 18:34:18,838 - livekit.agents - WARNING - Running <Task pending name='job_user_entrypoint' coro=<entrypoint() running at C:\Users\mamle\visualstudiocode\Riverline\Riverline-Hiring-Assignement\challenge-1\agent.py:202> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[_JobProc._run_job_task.<locals>.<lambda>() at C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:274, _JobProc._run_job_task.<locals>.log_exception() at C:\Users\mamle\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\livekit\agents\ipc\job_proc_lazy_main.py:276]> took too long: 3.05 seconds
+2025-06-15 18:34:18,845 - livekit.agents - DEBUG - http_session(): creating a new httpclient ctx
+2025-06-15 18:34:19,529 - livekit.agents - DEBUG - start reading stream
+2025-06-15 18:34:30,489 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 18:34:32,187 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 18:34:42,982 - livekit.agents - DEBUG - received user transcript
+2025-06-15 18:34:42,989 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 18:34:44,676 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 18:34:51,882 - livekit.agents - DEBUG - received user transcript
+2025-06-15 18:34:52,945 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 18:34:53,523 - livekit.agents - DEBUG - received user transcript
+2025-06-15 18:34:53,529 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 18:34:55,223 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 18:35:04,062 - livekit.agents - DEBUG - received user transcript
+2025-06-15 18:35:04,071 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2025-06-15 18:35:05,704 - google_genai.models - INFO - AFC remote call 1 is done.
+2025-06-15 18:35:14,046 - livekit.agents - DEBUG - closing agent session due to participant disconnect
+2025-06-15 18:35:14,048 - livekit.agents - DEBUG - stream closed
+2025-06-15 18:35:14,057 - livekit.agents - DEBUG - session closed
+2025-06-15 18:35:37,889 - livekit - WARNING - livekit::rtc_engine:450:livekit::rtc_engine - received session close: "signal client closed: \"stream closed\"" UnknownReason Resume
+2025-06-15 18:35:37,890 - livekit.agents - DEBUG - shutting down job task
+2025-06-15 18:35:37,893 - livekit.agents - DEBUG - job exiting
+2025-06-15 18:35:37,901 - livekit.agents - DEBUG - http_session(): closing the httpclient ctx
+2025-06-15 18:41:19,398 - livekit.agents - INFO - shutting down worker

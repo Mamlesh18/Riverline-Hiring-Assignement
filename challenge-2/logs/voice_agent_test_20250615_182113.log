@@ -1,0 +1,49 @@
+2025-06-15 18:21:13,945 - voice_agent_tester - INFO - Configuration loaded successfully
+2025-06-15 18:21:13,952 - voice_agent_tester - INFO - JSONSaver initialized successfully
+2025-06-15 18:21:14,691 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 18:21:14,691 - voice_agent_tester - INFO - Generated 4 customer personas
+2025-06-15 18:21:14,692 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 18:21:14,692 - voice_agent_tester - INFO - MetricsAnalyzer initialized successfully
+2025-06-15 18:21:14,692 - voice_agent_tester - INFO - ConversationSimulator initialized successfully
+2025-06-15 18:21:14,697 - voice_agent_tester - INFO - VoiceAgentTester initialized successfully
+2025-06-15 18:21:14,698 - voice_agent_tester - INFO - Generated system instructions for user: Rajesh Kumar
+2025-06-15 18:21:38,857 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 18:21:41,402 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 18:21:41,402 - voice_agent_tester - INFO - Conversation simulation completed for Rajesh Kumar
+2025-06-15 18:21:41,404 - voice_agent_tester - INFO - Generated system instructions for user: Priya Sharma
+2025-06-15 18:22:06,477 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 18:22:09,095 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 18:22:09,095 - voice_agent_tester - INFO - Conversation simulation completed for Priya Sharma
+2025-06-15 18:22:09,098 - voice_agent_tester - INFO - Generated system instructions for user: Amit Patel
+2025-06-15 18:22:21,470 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 18:22:22,933 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 18:22:22,933 - voice_agent_tester - INFO - Conversation simulation completed for Amit Patel
+2025-06-15 18:22:22,935 - voice_agent_tester - INFO - Identified failed metrics: ['negotiation_effectiveness', 'resolution_success_rate']
+2025-06-15 18:22:22,936 - voice_agent_tester - INFO - Generated 6 improvement strategies
+2025-06-15 18:22:22,936 - voice_agent_tester - INFO - Generated system instructions for user: Amit Patel
+2025-06-15 18:22:22,937 - voice_agent_tester - INFO - Prompt updated with improvements
+2025-06-15 18:23:05,950 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 18:23:08,622 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 18:23:08,622 - voice_agent_tester - INFO - Conversation simulation completed for Amit Patel
+2025-06-15 18:23:08,625 - voice_agent_tester - INFO - Generated system instructions for user: Vikram Singh
+2025-06-15 18:23:28,988 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 18:23:30,573 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 18:23:30,573 - voice_agent_tester - INFO - Conversation simulation completed for Vikram Singh
+2025-06-15 18:23:30,576 - voice_agent_tester - INFO - Identified failed metrics: ['negotiation_effectiveness', 'objection_handling_score']
+2025-06-15 18:23:30,576 - voice_agent_tester - INFO - Generated 6 improvement strategies
+2025-06-15 18:23:30,577 - voice_agent_tester - INFO - Generated system instructions for user: Vikram Singh
+2025-06-15 18:23:30,577 - voice_agent_tester - INFO - Prompt updated with improvements
+2025-06-15 18:23:48,451 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 18:23:49,974 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 18:23:49,974 - voice_agent_tester - INFO - Conversation simulation completed for Vikram Singh
+2025-06-15 18:23:49,976 - voice_agent_tester - INFO - Identified failed metrics: ['negotiation_effectiveness', 'objection_handling_score']
+2025-06-15 18:23:49,976 - voice_agent_tester - INFO - Generated 6 improvement strategies
+2025-06-15 18:23:49,978 - voice_agent_tester - INFO - Prompt updated with improvements
+2025-06-15 18:24:10,210 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 18:24:11,755 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 18:24:11,755 - voice_agent_tester - INFO - Conversation simulation completed for Vikram Singh
+2025-06-15 18:24:11,762 - voice_agent_tester - INFO - Summary generated successfully
+2025-06-15 18:24:11,762 - voice_agent_tester - INFO - Test suite completed with 4 conversations
+2025-06-15 18:24:11,765 - voice_agent_tester - INFO - Summary printed successfully
+2025-06-15 18:24:11,768 - voice_agent_tester - INFO - Results saved to: results\voice_agent_test_results_20250615_182411.json
+2025-06-15 18:24:11,769 - voice_agent_tester - INFO - Main execution completed successfully

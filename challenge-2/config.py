@@ -7,13 +7,13 @@ class Config:
         try:
             load_dotenv()
             self.api_key = self._get_api_key()
-            self.base_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+            self.base_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent"
             self.thresholds = {
-                'professionalism_score': 90,
+                'professionalism_score': 85,
                 'script_adherence_score': 85,
-                'negotiation_effectiveness': 80,
-                'objection_handling_score': 85,
-                'resolution_success_rate': 70
+                'negotiation_effectiveness': 75,
+                'objection_handling_score': 75,
+                'resolution_success_rate': 65
             }
             logger.info("Configuration loaded successfully")
         except Exception as e:

@@ -1,0 +1,245 @@
+{
+  "test_summary": {
+    "total_tests": 5,
+    "average_scores": {
+      "professionalism": 90.0,
+      "script_adherence": 94.0,
+      "negotiation_effectiveness": 79.0,
+      "objection_handling": 85.0,
+      "resolution_success": 80.0,
+      "overall_performance": 82.8
+    },
+    "threshold_pass_rate": 100.0
+  },
+  "individual_results": [
+    {
+      "persona": "Rajesh Kumar",
+      "personality": "cooperative_but_struggling",
+      "scenario": "Recently lost job, wants to pay but needs time",
+      "conversation_history": [
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. \nMay i speak with Rajesh Kumar?\n",
+        "Customer: Oh, hello Sarah. Yes, this is Rajesh Kumar. I was just about to call you, actually.\n",
+        "Agent: Hello, Rajesh Kumar. I'm calling to remind you that your credit card bill of \u20b938,209.92 is currently 53 days overdue. Are you able to make the payment today?\n",
+        "Customer: Oh, hello Sarah. Yes, I'm aware of the overdue bill. Unfortunately, I recently lost my job, so paying the full amount right now is a bit difficult.\n",
+        "Agent: I completely understand your concern, Rajesh Kumar, especially given the recent job loss. I know this is a challenging situation. Let me see what options we have available to help you.\n\nWould you prefer to pay 50% of the amount now, and the remaining 50% in 7 days, or would a full payment in 5 days work better for you? We can also discuss a potential payment plan if needed.\n",
+        "Customer: Oh, Sarah, that's very kind of you to offer some options. Honestly, both of those sound a bit tough right now, with my income situation being what it is.\n",
+        "Agent: I completely understand your concern about both options being challenging, Rajesh Kumar, especially given your current income situation. I can certainly understand that. Let me see what else we can do.\n\nGiven your circumstances, we can explore a few avenues. We could set up a payment plan for the next few months, allowing you to make smaller, more manageable payments. Alternatively, we could offer a further extended deadline, perhaps a full payment within 10 days, to give you a little more time to get things sorted. Can I have your confirmation that a 10-day extension would work for you?\n",
+        "Customer: Oh, Sarah, a payment plan over a few months sounds a bit more manageable, given everything. I'd really appreciate that if it's possible.\n",
+        "Agent: Absolutely, Rajesh Kumar, I can help you with that. I understand. A payment plan over a few months sounds like a good option for you.\n\nLet's set up a payment plan. We can break down the total amount due into equal installments over, say, the next three months. This would allow you to make more manageable payments. Would that work for you?\n\nTo confirm, the total amount due is \u20b938,209.92. If we divide that into three monthly payments, it would be approximately \u20b912,736.64 per month, payable on the same date each month, beginning a month from today.\n\nCan I have your confirmation that this payment plan suits your current situation?\n",
+        "Customer: Oh, yes, Sarah, that sounds much better, thank you. Three monthly payments of that amount would be manageable, considering my circumstances. I confirm that the plan suits me.\n",
+        "Agent: Hello, Rajesh Kumar. I'm so glad we could find a solution that works for you.\n\nFantastic! I'm happy to hear that the payment plan sounds manageable. So, to confirm, we'll set up the payment plan with three monthly installments of approximately \u20b912,736.64 each, starting a month from today, on the same date each month. Is that correct?\n\nGreat. I will send you a confirmation SMS with all the details of the payment plan shortly. I'll also call you on the same date in one month to confirm the first payment was processed.\n\nThank you for your understanding and cooperation, Rajesh Kumar. I truly appreciate it. Have a great day!\n"
+      ],
+      "debt_details": {
+        "amount": 45507.074038632396,
+        "days_overdue": 9
+      },
+      "metrics": {
+        "professionalism_score": 95,
+        "script_adherence_score": 95,
+        "negotiation_effectiveness": 85,
+        "objection_handling_score": 90,
+        "resolution_success_rate": 90,
+        "repetition_issues": 20,
+        "relevance_score": 100,
+        "conversation_length": 18,
+        "customer_satisfaction": 90,
+        "compliance_score": 100,
+        "overall_performance": 91,
+        "meets_thresholds": true,
+        "areas_for_improvement": [],
+        "strengths": [
+          "Professionalism",
+          "Script Adherence",
+          "Negotiation",
+          "Objection Handling",
+          "Resolution",
+          "Compliance"
+        ],
+        "failed_thresholds": []
+      },
+      "timestamp": "2025-06-15T18:27:00.020633"
+    },
+    {
+      "persona": "Priya Sharma",
+      "personality": "aggressive_defensive",
+      "scenario": "Frustrated with bank, claims payment was made",
+      "conversation_history": [
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill.\nMay i speak with Priya Sharma?\n",
+        "Customer: \"Yes, this is Priya Sharma. And what is this about, exactly? Because I'm sure I paid my bill, so what's the problem now?\"\n",
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill.\nMay i speak with Priya Sharma?\n\n\"Yes, this is Priya Sharma. And what is this about, exactly? Because I'm sure I paid my bill, so what's the problem now?\"\n\nI'm calling to remind you that your credit card bill of \u20b945,370.94 is currently 12 days overdue. I understand this might be frustrating, and I'm here to help find a solution that works for you. Are you able to make the payment today?\n",
+        "Customer: \"Are you kidding me? I already told you I paid! This is unbelievable. I don't have time for this nonsense, and I'm not paying anything again until you prove to me I haven't already paid. \"\n",
+        "Agent: I completely understand your concern, it\u2019s frustrating to receive a call when you believe you\u2019ve already made a payment. I want to assure you that I am here to help. Unfortunately, I am unable to access your transaction history and confirm if a payment has been made. However, if you are unable to make the payment today, would you prefer to pay 50% now and 50% in 7 days, or would a full payment in 5 days work better for you?\n",
+        "Customer: \"Are you serious right now? You *can't* access my payment history? That's ridiculous! I'm not agreeing to anything until someone actually does their job and checks if I paid, which I already told you I did!\"\n",
+        "Agent: I completely understand your concern about not having access to your payment history right now, and I truly apologize for the inconvenience. I know it's frustrating when you believe you've already taken care of something. Since I can't verify the payment status for you, let me see what other options we have available to help resolve this.\n\nTo offer a bit more flexibility, would you prefer to pay 50% of the \u20b945,370.94 now and the remaining 50% in 7 days? Or, would a full payment within 5 days work better for you? This will give us time to look into your account and see if a payment has already been made.\n",
+        "Customer: \"Are you *insane*? You're still pushing for payment when you can't even do your job and check if I paid?! I'm not paying anything, and I expect you to figure this out before I consider doing anything at all!\"\n",
+        "Agent: I understand this is challenging, and I sincerely apologize for the added frustration this is causing, especially since you believe you\u2019ve already paid. I know it\u2019s not ideal to receive a call like this.\n\nSince I am unable to access your payment history at this moment, let me see how we can work together to resolve this. Would you prefer for me to offer you two options? Perhaps you can pay 50% of the \u20b945,370.94 today and the remaining 50% in 7 days? Or, would you prefer to make the full payment within the next 5 days? This will give us time to look into your account and see if a payment has already been made.\n",
+        "Customer: Are you even listening? I'm not paying anything, and I want this resolved now! Get someone who can actually do their job and find out if I paid, or I'm hanging up.\n",
+        "Agent: I understand this is challenging. I hear your frustration, and I sincerely apologize that you are experiencing this. It is not ideal to receive a call like this.\n\nSince I cannot immediately access your payment history to verify if the payment has been made, let me offer you some options to help us resolve this. Would you be more comfortable with a solution where you make a payment of \u20b922,685.47 now, and then we\u2019ll look into your account and sort this out? Or, would you be open to making the full payment of \u20b945,370.94 within the next 5 days, which would allow us some time to investigate? This way, we can look into this matter immediately.\n",
+        "Customer: Are you *kidding* me? You're still pushing for money when you can't even do the bare minimum and check if I paid?! I'm not giving you a single rupee until someone actually does their job and finds my payment.\n",
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May i speak with Priya Sharma?\n\nI understand this is challenging. I hear your frustration, and I sincerely apologize that you are experiencing this. It is not ideal to receive a call like this.\n\nSince I cannot immediately access your payment history to verify if the payment has been made, let me offer you some options to help us resolve this. Would you be more comfortable with a solution where you make a payment of \u20b922,685.47 now, and then we\u2019ll look into your account and sort this out? Or, would you be open to making the full payment of \u20b945,370.94 within the next 5 days, which would allow us some time to investigate? This way, we can look into this matter immediately.\n",
+        "Customer: ARE YOU SERIOUS?! This is the third time you've asked me for money! I'm not paying a single cent until you people actually do your jobs and find the payment I *already* made!\n",
+        "Agent: I understand this is challenging. I hear your frustration, and I sincerely apologize that you are experiencing this. It is not ideal to receive a call like this.\n\nSince I cannot immediately access your payment history to verify if the payment has been made, let me offer you some options to help us resolve this. Would you be more comfortable with a solution where you make a payment of \u20b922,685.47 now, and then we\u2019ll look into your account and sort this out? Or, would you be open to making the full payment of \u20b945,370.94 within the next 5 days, which would allow us some time to investigate? This way, we can look into this matter immediately.\n",
+        "Customer: Are you even *listening* to me? I've told you, I'm not paying *anything*! I demand you find the payment I already made and stop wasting my time with these ridiculous offers.\n",
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May i speak with Priya Sharma?\n\nI completely understand your concern about not wanting to make a payment until the issue is resolved. I hear your frustration, and I sincerely apologize that you are experiencing this. It is not ideal to receive a call like this, and I want to help you.\n\nSince I cannot immediately access your payment history to verify if the payment has been made, let me see how we can work together to resolve this. Would you prefer that I put a temporary hold on the account for 48 hours to allow time for the investigation, with no payment due during that time? Alternatively, would you like me to see if I can arrange for a supervisor to contact you within the next hour to assist with verifying your payment status?\n",
+        "Customer: ARE YOU KIDDING ME?! You're calling me again about money I already paid? Put a hold on the account right now, or get me a supervisor. This is ridiculous!\n",
+        "Agent: I completely understand your concern about not wanting to make a payment until the issue is resolved. I hear your frustration, and I sincerely apologize that you are experiencing this. It is not ideal to receive a call like this, and I want to help you.\n\nSince I cannot immediately access your payment history to verify if the payment has been made, I will put a temporary hold on the account for 48 hours to allow time for the investigation. I will also arrange for a supervisor to contact you within the next hour to assist with verifying your payment status.\n\nIs this agreeable to you?\n\n",
+        "Customer: Finally! Fine, whatever, as long as you actually *do* what you say you're going to do this time. And if that supervisor isn't helpful, you'll be hearing from me again, understand?\n",
+        "Agent: Thank you for your understanding. I completely understand your concern, and I assure you, we want to resolve this for you as quickly as possible.\n\nI have put a temporary hold on your account for 48 hours, as agreed, while we investigate the payment. A supervisor will also be contacting you within the next hour to assist with verifying your payment status.\n\nI will call you again in 48 hours to confirm the investigation's findings and ensure everything has been resolved to your satisfaction.\n\nIs this timeline and the actions we've taken agreeable for you, Priya Sharma?\n"
+      ],
+      "debt_details": {
+        "amount": 11350.061600239951,
+        "days_overdue": 16
+      },
+      "metrics": {
+        "professionalism_score": 85,
+        "script_adherence_score": 90,
+        "negotiation_effectiveness": 75,
+        "objection_handling_score": 80,
+        "resolution_success_rate": 70,
+        "repetition_issues": 70,
+        "relevance_score": 95,
+        "conversation_length": 18,
+        "customer_satisfaction": 20,
+        "compliance_score": 95,
+        "overall_performance": 70,
+        "meets_thresholds": true,
+        "areas_for_improvement": [
+          "Reducing Repetition",
+          "Proactive Resolution",
+          "Empathy"
+        ],
+        "strengths": [
+          "Polite",
+          "Script Adherence",
+          "Compliance"
+        ],
+        "failed_thresholds": []
+      },
+      "timestamp": "2025-06-15T18:29:36.511324"
+    },
+    {
+      "persona": "Amit Patel",
+      "personality": "avoidant_evasive",
+      "scenario": "Tries to avoid payment, makes excuses",
+      "conversation_history": [
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Amit Patel?\n",
+        "Customer: (Slightly hesitant) Uh, yeah, this is Amit. Look, is this a bad time? I was just... uh... swamped with something right now.\n",
+        "Agent: \"I understand. I'm calling to remind you that your credit card bill of \u20b919,820.65 is currently 44 days overdue. Are you able to make the payment today?\"\n",
+        "Customer: (Stammering slightly) Oh, right, the bill. Look, things are just crazy at the moment. Could we... uh... maybe talk about this later? I'm really in a bind right now.\n",
+        "Agent: I understand. Would you be able to make the payment within the next 3 days? We can extend your deadline by 3 more days.\n",
+        "Customer: (Quickly) Three days? Uh, yeah, maybe. I'll\u2026 I'll see what I can do. I\u2019ve got some stuff\u2026 coming in, hopefully.\n",
+        "Agent: I completely understand your situation. Our human agent will be calling you shortly to help rectify this matter and discuss available options. Thank you for your time.\n"
+      ],
+      "debt_details": {
+        "amount": 19820.645194660694,
+        "days_overdue": 44
+      },
+      "metrics": {
+        "professionalism_score": 90,
+        "script_adherence_score": 95,
+        "negotiation_effectiveness": 75,
+        "objection_handling_score": 85,
+        "resolution_success_rate": 70,
+        "repetition_issues": 10,
+        "relevance_score": 100,
+        "conversation_length": 8,
+        "customer_satisfaction": 40,
+        "compliance_score": 95,
+        "overall_performance": 80,
+        "meets_thresholds": true,
+        "areas_for_improvement": [
+          "resolution tactics",
+          "increasing customer satisfaction"
+        ],
+        "strengths": [
+          "professional tone",
+          "script adherence",
+          "empathy"
+        ],
+        "failed_thresholds": []
+      },
+      "timestamp": "2025-06-15T18:30:04.352851"
+    },
+    {
+      "persona": "Sita Devi",
+      "personality": "calm_responsive",
+      "scenario": "Willing to pay, asks for deadline extension",
+      "conversation_history": [
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill.\nMay i speak with Sita Devi?\n",
+        "Customer: Yes, this is Sita Devi. How can I help you, Sarah?\n",
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill.\nMay i speak with Sita Devi?\n\nYes, this is Sita Devi. How can I help you, Sarah?\n\nI'm calling to remind you that your credit card bill of \u20b911,928.06 is currently 25 days overdue. Are you able to make the payment today?\n",
+        "Customer: Oh, hello Sarah. Yes, I remember the bill. I'm able to pay it, but I'm a little short on funds at the moment. Could I possibly get a short extension on the deadline?\n",
+        "Agent: I understand this is challenging. Let me see what options we have available to help you. Would you prefer to pay 50% of the amount now and the remaining 50% in 7 days, or would a full payment within the next 5 days be more manageable for you?\n",
+        "Customer: Thank you, Sarah, I appreciate you looking into options for me. I think paying in full within the next 5 days would work best for me at the moment.\n",
+        "Agent: Thank you for confirming that, I'm glad we found a solution that works for you. We'll expect the full payment within the next 5 days. Thank you for your understanding, and have a wonderful day, Sita Devi.\n"
+      ],
+      "debt_details": {
+        "amount": 24634.277849556496,
+        "days_overdue": 33
+      },
+      "metrics": {
+        "professionalism_score": 90,
+        "script_adherence_score": 95,
+        "negotiation_effectiveness": 80,
+        "objection_handling_score": 85,
+        "resolution_success_rate": 90,
+        "repetition_issues": 10,
+        "relevance_score": 100,
+        "conversation_length": 8,
+        "customer_satisfaction": 80,
+        "compliance_score": 95,
+        "overall_performance": 88,
+        "meets_thresholds": true,
+        "areas_for_improvement": [],
+        "strengths": [
+          "professional tone",
+          "script adherence",
+          "effective negotiation",
+          "clear resolution"
+        ],
+        "failed_thresholds": []
+      },
+      "timestamp": "2025-06-15T18:31:06.252323"
+    },
+    {
+      "persona": "Ravi Singh",
+      "personality": "confused_uninformed",
+      "scenario": "Unaware of overdue payment, needs explanation",
+      "conversation_history": [
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May i speak with Ravi Singh?\n",
+        "Customer: Uh, hello? This is Ravi Singh. Credit card bill? I...I don't think I understand. What's going on?\n",
+        "Agent: \"I understand this might be a bit confusing. I'm calling to remind you that your credit card bill of \u20b98,533.28 is currently 58 days overdue. As we discussed, we can extend your deadline.\n\nI completely understand your situation. How about this: Would you prefer to pay 50% now and 50% in 7 days, or would a full payment in 5 days work better for you? I'm here to help find a solution that works for you.\n\nSo to confirm, you'll make the payment by [specific date]. I'll send you a confirmation SMS shortly. Can I have your confirmation that this timeline works for you? I'll call you on [specific date] to confirm the payment was processed. Thank you so much for your time, Ravi Singh. Have a great day!\"\n"
+      ],
+      "debt_details": {
+        "amount": 27039.93699051917,
+        "days_overdue": 9
+      },
+      "metrics": {
+        "professionalism_score": 90,
+        "script_adherence_score": 95,
+        "negotiation_effectiveness": 80,
+        "objection_handling_score": 85,
+        "resolution_success_rate": 80,
+        "repetition_issues": 10,
+        "relevance_score": 100,
+        "conversation_length": 8,
+        "customer_satisfaction": 70,
+        "compliance_score": 95,
+        "overall_performance": 85,
+        "meets_thresholds": true,
+        "areas_for_improvement": [
+          "Could have explored the reason for non-payment further to personalize the solution"
+        ],
+        "strengths": [
+          "Clear communication",
+          "Professional and polite tone",
+          "Good script adherence"
+        ],
+        "failed_thresholds": []
+      },
+      "timestamp": "2025-06-15T18:32:11.069538"
+    }
+  ],
+  "test_timestamp": "2025-06-15T18:32:11.071799",
+  "total_conversations": 5
+}

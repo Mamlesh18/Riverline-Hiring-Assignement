@@ -1,0 +1,16 @@
+2025-06-15 12:48:34,667 - voice_agent_tester - INFO - Configuration loaded successfully
+2025-06-15 12:48:34,732 - voice_agent_tester - INFO - JSONSaver initialized successfully
+2025-06-15 12:48:36,694 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 12:48:36,694 - voice_agent_tester - INFO - Generated 6 customer personas
+2025-06-15 12:48:36,694 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 12:48:36,695 - voice_agent_tester - INFO - MetricsAnalyzer initialized successfully
+2025-06-15 12:48:36,695 - voice_agent_tester - INFO - ConversationSimulator initialized successfully
+2025-06-15 12:48:36,695 - voice_agent_tester - INFO - VoiceAgentTester initialized successfully
+2025-06-15 12:48:36,697 - voice_agent_tester - INFO - Generated system instructions for user: Rajesh Kumar
+2025-06-15 12:48:57,442 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 12:48:59,073 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 12:48:59,073 - voice_agent_tester - INFO - Conversation simulation completed for Rajesh Kumar
+2025-06-15 12:48:59,074 - voice_agent_tester - ERROR - Error running test suite: 'VoiceAgentTester' object has no attribute '_display_metrics'
+2025-06-15 12:48:59,077 - voice_agent_tester - ERROR - Error printing summary: 'test_summary'
+2025-06-15 12:48:59,079 - voice_agent_tester - INFO - Results saved to: results\voice_agent_test_results_20250615_124859.json
+2025-06-15 12:48:59,080 - voice_agent_tester - INFO - Main execution completed successfully

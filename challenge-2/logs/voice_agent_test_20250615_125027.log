@@ -1,0 +1,23 @@
+2025-06-15 12:50:27,503 - voice_agent_tester - INFO - Configuration loaded successfully
+2025-06-15 12:50:27,528 - voice_agent_tester - INFO - JSONSaver initialized successfully
+2025-06-15 12:50:28,222 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 12:50:28,223 - voice_agent_tester - INFO - Generated 6 customer personas
+2025-06-15 12:50:28,223 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 12:50:28,223 - voice_agent_tester - INFO - MetricsAnalyzer initialized successfully
+2025-06-15 12:50:28,223 - voice_agent_tester - INFO - ConversationSimulator initialized successfully
+2025-06-15 12:50:28,225 - voice_agent_tester - INFO - VoiceAgentTester initialized successfully
+2025-06-15 12:50:28,226 - voice_agent_tester - INFO - Generated system instructions for user: Rajesh Kumar
+2025-06-15 12:50:49,067 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 12:50:52,008 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 12:50:52,008 - voice_agent_tester - INFO - Conversation simulation completed for Rajesh Kumar
+2025-06-15 12:50:52,011 - voice_agent_tester - INFO - Identified failed metrics: ['negotiation_effectiveness', 'resolution_success_rate']
+2025-06-15 12:50:52,011 - voice_agent_tester - INFO - Generated 6 improvement strategies
+2025-06-15 12:50:52,011 - voice_agent_tester - INFO - Generated system instructions for user: Rajesh Kumar
+2025-06-15 12:50:52,013 - voice_agent_tester - INFO - Prompt updated with improvements
+2025-06-15 12:51:23,382 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 12:51:26,224 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 12:51:26,224 - voice_agent_tester - INFO - Conversation simulation completed for Rajesh Kumar
+2025-06-15 12:51:26,227 - voice_agent_tester - INFO - Generated system instructions for user: Priya Sharma
+2025-06-15 12:51:32,342 - voice_agent_tester - ERROR - API Error: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDRSGM-6OyP0BwEuhnFn_II0CwdeQYK1Lw
+2025-06-15 12:51:34,805 - voice_agent_tester - ERROR - API Error: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDRSGM-6OyP0BwEuhnFn_II0CwdeQYK1Lw
+2025-06-15 12:51:36,132 - voice_agent_tester - ERROR - API Error: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDRSGM-6OyP0BwEuhnFn_II0CwdeQYK1Lw

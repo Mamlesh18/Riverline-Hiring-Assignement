@@ -92,7 +92,7 @@ RETURN ONLY JSON in this exact format:
     
     def analyze_conversation(self, conversation_history: List[str], persona_info: Dict[str, Any]) -> Dict[str, Any]:
         try:
-            time.sleep(1)
+            time.sleep(2)
             
             prompt = self.create_metrics_prompt(conversation_history, persona_info)
             response = self.gemini.generate_response(prompt)

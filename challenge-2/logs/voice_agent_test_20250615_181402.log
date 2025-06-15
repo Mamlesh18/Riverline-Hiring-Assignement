@@ -1,0 +1,18 @@
+2025-06-15 18:14:03,010 - voice_agent_tester - INFO - Configuration loaded successfully
+2025-06-15 18:14:03,042 - voice_agent_tester - INFO - JSONSaver initialized successfully
+2025-06-15 18:14:05,056 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 18:14:05,057 - voice_agent_tester - INFO - Generated 4 customer personas
+2025-06-15 18:14:05,057 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-15 18:14:05,057 - voice_agent_tester - INFO - MetricsAnalyzer initialized successfully
+2025-06-15 18:14:05,057 - voice_agent_tester - INFO - ConversationSimulator initialized successfully
+2025-06-15 18:14:05,059 - voice_agent_tester - INFO - VoiceAgentTester initialized successfully
+2025-06-15 18:14:05,059 - voice_agent_tester - INFO - Generated system instructions for user: Rajesh Kumar
+2025-06-15 18:14:29,486 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-15 18:14:32,157 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-15 18:14:32,157 - voice_agent_tester - INFO - Conversation simulation completed for Rajesh Kumar
+2025-06-15 18:14:32,159 - voice_agent_tester - INFO - Identified failed metrics: ['negotiation_effectiveness', 'resolution_success_rate']
+2025-06-15 18:14:32,160 - voice_agent_tester - INFO - Generated 6 improvement strategies
+2025-06-15 18:14:32,160 - voice_agent_tester - INFO - Generated system instructions for user: Rajesh Kumar
+2025-06-15 18:14:32,160 - voice_agent_tester - INFO - Prompt updated with improvements
+2025-06-15 18:15:02,251 - voice_agent_tester - ERROR - API Error: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDRSGM-6OyP0BwEuhnFn_II0CwdeQYK1Lw
+2025-06-15 18:15:04,555 - voice_agent_tester - ERROR - API Error: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDRSGM-6OyP0BwEuhnFn_II0CwdeQYK1Lw

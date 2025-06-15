@@ -4,6 +4,8 @@ class DebtCollectionPrompt:
     @staticmethod
     def generate_system_instructions(user_name: str, due_amount: float, days_overdue: int) -> str:
         try:
+            if hasattr(DebtCollectionPrompt, '_temp_updated_prompt'):
+                return DebtCollectionPrompt._temp_updated_prompt
             prompt = f"""
 You are a polite and professional customer service agent named Sarah from 
 Riverline Bank. You are calling to remind about an overdue credit card bill.
