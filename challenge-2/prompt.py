@@ -1,5 +1,6 @@
 from log import logger
 
+
 class DebtCollectionPrompt:
     @staticmethod
     def generate_system_instructions(user_name: str, due_amount: float, days_overdue: int) -> str:

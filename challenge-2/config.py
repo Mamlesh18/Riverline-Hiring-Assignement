@@ -1,6 +1,9 @@
 import os
+
 from dotenv import load_dotenv
+
 from log import logger
+
 
 class Config:
     def __init__(self):
@@ -25,7 +28,8 @@ class Config:
             api_key = os.getenv('GEMINI_API_KEY')
             if not api_key:
                 api_key = "AIzaSyDRSGM-6OyP0BwEuhnFn_II0CwdeQYK1Lw"
-                logger.warning("Using hardcoded API key - consider setting GEMINI_API_KEY environment variable")
+                logger.warning("Using hardcoded API key - consider setting GEMINI_API_KEY" \
+                " environment variable")
             return api_key
         except Exception as e:
             logger.error(f"Error getting API key: {e}")

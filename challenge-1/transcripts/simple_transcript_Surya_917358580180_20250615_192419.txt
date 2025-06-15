@@ -1,0 +1,17 @@
+Call Details:
+Debtor: Surya
+Phone: +917358580180
+Amount: ₹1000.0
+Days Overdue: 5
+
+==================================================
+CONVERSATION:
+==================================================
+
+Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May i speak with Surya?
+User: Yeah. Yeah. Speaking with Sue. Yeah. Tell me what's the issue.
+Agent: I'm calling to remind you that your credit card bill of ₹1,000.00 is currently 5 days overdue.
+User: Okay. Yeah. I've got reminder just now. Thank you for reminding me. I'll pay it by today. Okay?
+User: Thank you.
+Agent: Thank you so much for confirming. We really appreciate it. Have a wonderful day, Surya!
+User: Thank you.

@@ -1,0 +1,165 @@
+{
+  "session_id": "room-W7Y5JoERVohc",
+  "call_details": {
+    "phone_number": "+917358580180",
+    "debtor_name": "Surya",
+    "debt_amount": 15000.0,
+    "days_overdue": 45,
+    "call_start_time": "2025-06-15T19:20:42.865745",
+    "call_end_time": "2025-06-15T19:21:35.442693",
+    "call_duration": "0:00:52.576948"
+  },
+  "real_time_transcript": [
+    {
+      "timestamp": "2025-06-15T19:21:08.369357",
+      "speaker": "user",
+      "text": "Yeah. You're speaking with",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-15T19:21:09.351990",
+      "speaker": "user",
+      "text": "Yeah. You're speaking with Suya. Tell me",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-15T19:21:10.377082",
+      "speaker": "user",
+      "text": "Yeah. You're speaking with Suya. Tell me what's the issue.",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-15T19:21:23.309377",
+      "speaker": "user",
+      "text": "Yeah.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-15T19:21:23.842989",
+      "speaker": "user",
+      "text": "Yeah. I can",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-15T19:21:24.822862",
+      "speaker": "user",
+      "text": "Yeah. I can't make the payment today.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-15T19:21:25.806602",
+      "speaker": "user",
+      "text": "Yeah. I can't make the payment today. Is there, like, any other",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-15T19:21:26.918727",
+      "speaker": "user",
+      "text": "Yeah. I can't make the payment today. Is there, like, any other way I can do it?",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-15T19:21:27.032707",
+      "speaker": "user",
+      "text": "Yeah. I can't make the payment today. Is there, like, any other way I can do it?",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent"
+    }
+  ],
+  "conversation_items": [
+    {
+      "timestamp": "2025-06-15T19:21:05.442364",
+      "type": "message",
+      "content": "id='item_e61ad3fc3887' type='message' role='assistant' content=['Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Surya?\\n'] interrupted=False hash=None created_at=1749995457.3788233",
+      "role": "assistant"
+    },
+    {
+      "timestamp": "2025-06-15T19:21:10.386434",
+      "type": "message",
+      "content": "id='item_a49896a040c1' type='message' role='user' content=[\"Yeah. You're speaking with Suya. Tell me what's the issue.\"] interrupted=False hash=None created_at=1749995470.384398",
+      "role": "user"
+    },
+    {
+      "timestamp": "2025-06-15T19:21:20.563050",
+      "type": "message",
+      "content": "id='item_5e88f4b0fd91' type='message' role='assistant' content=[\"I'm calling to remind you that your credit card bill of ₹15,000.00 is currently 45 days overdue. Are you able to make the payment today?\\n\"] interrupted=False hash=None created_at=1749995470.3957276",
+      "role": "assistant"
+    },
+    {
+      "timestamp": "2025-06-15T19:21:27.114836",
+      "type": "message",
+      "content": "id='item_023a1c8d652a' type='message' role='user' content=[\"Yeah. I can't make the payment today. Is there, like, any other way I can do it?\"] interrupted=False hash=None created_at=1749995487.1138425",
+      "role": "user"
+    }
+  ],
+  "clean_conversation": [
+    {
+      "speaker": "agent",
+      "message": "Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Surya?",
+      "timestamp": "2025-06-15T19:21:05.442364"
+    },
+    {
+      "speaker": "user",
+      "message": "Yeah. You're speaking with Suya. Tell me what's the issue.",
+      "timestamp": "2025-06-15T19:21:10.386434"
+    },
+    {
+      "speaker": "agent",
+      "message": "I'm calling to remind you that your credit card bill of ₹15,000.00 is currently 45 days overdue. Are you able to make the payment today?",
+      "timestamp": "2025-06-15T19:21:20.563050"
+    },
+    {
+      "speaker": "user",
+      "message": "Yeah. I can't make the payment today. Is there, like, any other way I can do it?",
+      "timestamp": "2025-06-15T19:21:27.114836"
+    }
+  ],
+  "complete_history": {
+    "items": [
+      {
+        "id": "item_e61ad3fc3887",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Surya?\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_a49896a040c1",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Yeah. You're speaking with Suya. Tell me what's the issue."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_5e88f4b0fd91",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "I'm calling to remind you that your credit card bill of ₹15,000.00 is currently 45 days overdue. Are you able to make the payment today?\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_023a1c8d652a",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Yeah. I can't make the payment today. Is there, like, any other way I can do it?"
+        ],
+        "interrupted": false
+      }
+    ]
+  }
+}

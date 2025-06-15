@@ -1,21 +1,33 @@
-from log import logger
 from typing import List
+
+from log import logger
+
+
 class AdaptivePromptManager:
     def __init__(self):
         self.improvement_strategies = {
             'negotiation_effectiveness': [
-                "When customer cannot pay immediately, ALWAYS offer specific alternatives: 'Would you prefer to pay 50% now and 50% in 7 days, or would a full payment in 5 days work better for you?'",
-                "Use empathetic negotiation: 'I understand this is challenging. Let me see what options we have available to help you.'",
-                "Provide multiple payment options: partial payments, extended deadlines, or payment plans."
+                "When customer cannot pay immediately, ALWAYS offer specific alternatives: "
+                "'Would you prefer to pay 50% now and 50% in 7 days, or would a full payment in 5"
+                 " days work better for you?'",
+                "Use empathetic negotiation: 'I understand this is challenging. Let me see what "
+                "options we have available to help you.'",
+                "Provide multiple payment options: partial payments, extended deadlines, or payment"
+                "plans."
             ],
             'resolution_success_rate': [
-                "ALWAYS end with concrete next steps: 'So to confirm, you'll make the payment by [specific date]. I'll send you a confirmation SMS shortly.'",
-                "Ask for commitment: 'Can I have your confirmation that this timeline works for you?'",
-                "Establish clear follow-up: 'I'll call you on [specific date] to confirm the payment was processed.'"
+                "ALWAYS end with concrete next steps: 'So to confirm, you'll make the payment by "
+                "[specific date]. I'll send you a confirmation SMS shortly.'",
+                "Ask for commitment: 'Can I have your confirmation that this "
+                "timeline works for you?'",
+                "Establish clear follow-up: 'I'll call you on [specific date] to confirm the "
+                "payment was processed.'"
             ],
             'objection_handling_score': [
-                "When customer objects, first acknowledge: 'I completely understand your concern about...'",
-                "Provide solutions, not just policies: 'Let me see how we can work together to resolve this.'",
+                "When customer objects, first acknowledge: 'I completely understand your "
+                "concern about...'",
+                "Provide solutions, not just policies: 'Let me see how we can work together"
+                " to resolve this.'",
                 "Never argue with customers - redirect to solutions instead."
             ],
             'customer_satisfaction': [
@@ -67,10 +79,11 @@ class AdaptivePromptManager:
             for i, improvement in enumerate(improvements, 1):
                 improvement_section += f"{i}. {improvement}\n"
             
-            # Insert improvements before the GOAL section
             goal_index = base_prompt.find("GOAL:")
             if goal_index != -1:
-                updated_prompt = base_prompt[:goal_index] + improvement_section + "\n" + base_prompt[goal_index:]
+                updated_prompt = base_prompt[:
+                                             goal_index] + improvement_section + "\n" + base_prompt[
+                                                 goal_index:]
             else:
                 updated_prompt = base_prompt + improvement_section
             

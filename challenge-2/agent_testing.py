@@ -1,15 +1,16 @@
-import time
 import random
+import time
 from dataclasses import dataclass
-from typing import List, Dict, Any
 from datetime import datetime
+from typing import Any, Dict, List
 
-from config import config
-from log import logger
-from prompt import DebtCollectionPrompt
-from json_saving import json_saver
-from metrics_analyser import GeminiAPI, MetricsAnalyzer
 from adaptive_prompt import AdaptivePromptManager
+from config import config
+from json_saving import json_saver
+from log import logger
+from metrics_analyser import GeminiAPI, MetricsAnalyzer
+from prompt import DebtCollectionPrompt
+
 
 @dataclass
 class CustomerPersona:
@@ -31,11 +32,16 @@ class ConversationSimulator:
     def _generate_personas(self) -> List[CustomerPersona]:
         try:
             personas = [
-                CustomerPersona("Rajesh Kumar", "cooperative_but_struggling", "Recently lost job, wants to pay but needs time"),
-                CustomerPersona("Priya Sharma", "aggressive_defensive", "Frustrated with bank, claims payment was made"),
-                CustomerPersona("Amit Patel", "avoidant_evasive", "Tries to avoid payment, makes excuses"),
-                CustomerPersona("Sita Devi", "calm_responsive", "Willing to pay, asks for deadline extension"),
-                CustomerPersona("Ravi Singh", "confused_uninformed", "Unaware of overdue payment, needs explanation"),
+                CustomerPersona("Rajesh Kumar", "cooperative_but_struggling", "Recently lost job," \
+                " wants to pay but needs time"),
+                CustomerPersona("Priya Sharma", "aggressive_defensive", "Frustrated with bank, " \
+                "claims payment was made"),
+                CustomerPersona("Amit Patel", "avoidant_evasive", "Tries to avoid payment, makes" \
+                " excuses"),
+                CustomerPersona("Sita Devi", "calm_responsive", "Willing to pay, asks for " \
+                "deadline extension"),
+                CustomerPersona("Ravi Singh", "confused_uninformed", "Unaware of overdue payment," \
+                " needs explanation"),
             ]
             logger.info(f"Generated {len(personas)} customer personas")
             return personas
@@ -43,7 +49,8 @@ class ConversationSimulator:
             logger.error(f"Error generating personas: {e}")
             return []
     
-    def create_customer_prompt(self, persona: CustomerPersona, agent_message: str, conversation_history: List[str]) -> str:
+    def create_customer_prompt(self, persona: CustomerPersona, agent_message: str,
+                                conversation_history: List[str]) -> str:
         try:
             history = '\n'.join(conversation_history[-6:])
             
@@ -61,13 +68,15 @@ Respond naturally as this character (1-2 sentences max). Stay in character.
             logger.error(f"Error creating customer prompt: {e}")
             return ""
     
-    def simulate_conversation(self, persona: CustomerPersona, max_turns: int = 10) -> Dict[str, Any]:
+    def simulate_conversation(self, persona: CustomerPersona, 
+                              max_turns: int = 10) -> Dict[str, Any]:
         try:
             due_amount = random.uniform(5000, 50000)
             days_overdue = random.randint(7, 60)
             
             conversation_history = []
-            agent_prompt = DebtCollectionPrompt.generate_system_instructions(persona.name, due_amount, days_overdue)
+            agent_prompt = DebtCollectionPrompt.generate_system_instructions(
+                persona.name,due_amount, days_overdue)
             
             print(f"\n--- Conversation with {persona.name} ({persona.personality}) ---")
             print(f"Debt: ₹{due_amount:,.2f}, {days_overdue} days overdue")
@@ -81,7 +90,8 @@ Respond naturally as this character (1-2 sentences max). Stay in character.
             
             for turn in range(max_turns):
                 time.sleep(2) 
-                customer_prompt = self.create_customer_prompt(persona, agent_message, conversation_history)
+                customer_prompt = self.create_customer_prompt(persona, agent_message,
+                                                              conversation_history)
                 customer_message = self.gemini.generate_response(customer_prompt)
                 
                 conversation_history.append(f"Customer: {customer_message}")
@@ -93,14 +103,16 @@ Respond naturally as this character (1-2 sentences max). Stay in character.
                 ]
                 
                 if any(phrase in customer_message.lower() for phrase in customer_end_phrases):
-                    if any(word in customer_message.lower() for word in ["fine", "okay", "alright", "understand", "good"]):
+                    if any(word in customer_message.lower() for word in ["fine", "okay", "alright",
+                                                                          "understand", "good"]):
                         time.sleep(2)
                         final_agent_prompt = f"""
 {agent_prompt}
 Previous conversation:
 {chr(10).join(conversation_history[-8:])}
 Customer just said: "{customer_message}" 
-The customer seems to have accepted your solution/explanation. Provide a polite closing statement and end the call professionally.
+The customer seems to have accepted your solution/explanation. Provide a polite closing statement
+ and end the call professionally.
 """
                         agent_message = self.gemini.generate_response(final_agent_prompt)
                         conversation_history.append(f"Agent: {agent_message}")
@@ -115,7 +127,8 @@ The customer seems to have accepted your solution/explanation. Provide a polite 
 Previous conversation:
 {chr(10).join(conversation_history[-8:])}
 Customer just said: "{customer_message}"
-Respond according to your instructions. If the customer seems satisfied or if you've provided a complete solution, politely end the call.
+Respond according to your instructions. If the customer seems satisfied or if you've provided a
+ complete solution, politely end the call.
 """
                 
                 agent_message = self.gemini.generate_response(agent_context)
@@ -129,7 +142,7 @@ Respond according to your instructions. If the customer seems satisfied or if yo
                 ]
                 
                 if any(phrase in agent_message.lower() for phrase in agent_end_phrases):
-                    print("🔚 Agent ended the conversation")
+                    print(" Agent ended the conversation")
                     break
             
             print("Analyzing conversation metrics...")
@@ -162,23 +175,23 @@ class VoiceAgentTester:
     def __init__(self, api_key: str):
         try:
             self.simulator = ConversationSimulator(api_key)
-            self.adaptive_manager = AdaptivePromptManager()  # Add this line
+            self.adaptive_manager = AdaptivePromptManager() 
             logger.info("VoiceAgentTester initialized successfully")
         except Exception as e:
             logger.error(f"Error initializing VoiceAgentTester: {e}")
             raise
     
-    def run_test_suite(self, num_tests_per_persona: int = 1, max_retries: int = 3) -> Dict[str, Any]:
+    def run_test_suite(self, num_tests_per_persona: int = 1, 
+                       max_retries: int = 3) -> Dict[str, Any]:
         try:
-            print("🚀 Starting Voice Agent Testing")
+            print(" Starting Voice Agent Testing")
             print("=" * 50)
             
             all_results = []
             
             for persona in self.simulator.personas:
-                print(f"\n📞 Testing with {persona.name}")
+                print(f"\nTesting with {persona.name}")
                 
-                # Track attempts for this persona
                 attempt = 0
                 persona_passed = False
                 
@@ -192,38 +205,37 @@ class VoiceAgentTester:
                     result = self.simulator.simulate_conversation(persona)
                     metrics = result['metrics']
                     
-                    # Display metrics
                     self._display_metrics(persona.name, metrics)
                     
                     if metrics.get('meets_thresholds', False):
-                        print(f"✅ {persona.name} PASSED on attempt {attempt}")
+                        print(f" {persona.name} PASSED on attempt {attempt}")
                         persona_passed = True
                         all_results.append(result)
                         break
                     else:
-                        print(f"❌ {persona.name} FAILED attempt {attempt}")
+                        print(f" {persona.name} FAILED attempt {attempt}")
                         failed_thresholds = metrics.get('failed_thresholds', [])
                         
                         if attempt < max_retries:
                             print(f"🔄 Updating prompt for {persona.name}...")
-                            failed_metrics = self.adaptive_manager.analyze_failures(failed_thresholds)
-                            improvements = self.adaptive_manager.generate_improvements(failed_metrics)
+                            failed_metrics = self.adaptive_manager.analyze_failures(
+                                failed_thresholds)
+                            improvements = self.adaptive_manager.generate_improvements(
+                                failed_metrics)
                             
-                            # Update the prompt in DebtCollectionPrompt
                             original_prompt = DebtCollectionPrompt.generate_system_instructions(
                                 persona.name, result['debt_details']['amount'], 
                                 result['debt_details']['days_overdue']
                             )
-                            updated_prompt = self.adaptive_manager.update_prompt(original_prompt, improvements)
+                            updated_prompt = self.adaptive_manager.update_prompt(original_prompt, 
+                                                                                 improvements)
                             
-                            # Temporarily store the updated prompt
                             DebtCollectionPrompt._temp_updated_prompt = updated_prompt
                             print(f"📝 Prompt updated with {len(improvements)} improvements")
                         else:
                             print(f"⚠️ {persona.name} failed all {max_retries} attempts")
                             all_results.append(result)
                 
-                # Clean up temporary prompt
                 if hasattr(DebtCollectionPrompt, '_temp_updated_prompt'):
                     delattr(DebtCollectionPrompt, '_temp_updated_prompt')
                 
@@ -252,14 +264,21 @@ class VoiceAgentTester:
             
             total_tests = len(results)
             
-            avg_professionalism = sum(r['metrics'].get('professionalism_score', 0) for r in results) / total_tests
-            avg_script_adherence = sum(r['metrics'].get('script_adherence_score', 0) for r in results) / total_tests
-            avg_negotiation = sum(r['metrics'].get('negotiation_effectiveness', 0) for r in results) / total_tests
-            avg_objection_handling = sum(r['metrics'].get('objection_handling_score', 0) for r in results) / total_tests
-            avg_resolution = sum(r['metrics'].get('resolution_success_rate', 0) for r in results) / total_tests
-            avg_overall = sum(r['metrics'].get('overall_performance', 0) for r in results) / total_tests
+            avg_professionalism = sum(r['metrics'].get('professionalism_score', 0) for r in 
+                                      results) / total_tests
+            avg_script_adherence = sum(r['metrics'].get('script_adherence_score', 0) for r in 
+                                       results) / total_tests
+            avg_negotiation = sum(r['metrics'].get('negotiation_effectiveness', 0) for r in 
+                                  results) / total_tests
+            avg_objection_handling = sum(r['metrics'].get('objection_handling_score', 0) for 
+                                         r in results) / total_tests
+            avg_resolution = sum(r['metrics'].get('resolution_success_rate', 0) for r in 
+                                 results) / total_tests
+            avg_overall = sum(r['metrics'].get('overall_performance', 0) for r in
+                               results) / total_tests
             
-            threshold_pass_rate = sum(r['metrics'].get('meets_thresholds', False) for r in results) / total_tests * 100
+            threshold_pass_rate = sum(r['metrics'].get('meets_thresholds', False) for r in 
+                                      results) / total_tests * 100
             
             summary = {
                 'total_tests': total_tests,
@@ -286,7 +305,7 @@ class VoiceAgentTester:
             summary = results['test_summary']
             
             print("\n" + "=" * 60)
-            print("📊 FINAL TEST SUMMARY")
+            print(" FINAL TEST SUMMARY")
             print("=" * 60)
             
             print(f"Total Conversations: {summary['total_tests']}")
@@ -296,7 +315,7 @@ class VoiceAgentTester:
             for metric, score in summary['average_scores'].items():
                 print(f"  {metric.replace('_', ' ').title()}: {score}/100")
             
-            print("\n💾 Detailed results saved to JSON file")
+            print("\nDetailed results saved to JSON file")
             logger.info("Summary printed successfully")
             
         except Exception as e:
@@ -304,7 +323,7 @@ class VoiceAgentTester:
             print("Error displaying summary")
     def _display_metrics(self, persona_name: str, metrics: Dict[str, Any]):
         """Helper method to display metrics"""
-        print(f"\n📊 DETAILED METRICS for {persona_name}:")
+        print(f"\n DETAILED METRICS for {persona_name}:")
         print(f"   Professionalism Score: {metrics.get('professionalism_score', 0)}/100")
         print(f"   Script Adherence: {metrics.get('script_adherence_score', 0)}/100") 
         print(f"   Negotiation Effectiveness: {metrics.get('negotiation_effectiveness', 0)}/100")
@@ -319,13 +338,13 @@ class VoiceAgentTester:
         print(f"   Meets Thresholds: {metrics.get('meets_thresholds', False)}")
         
         if 'failed_thresholds' in metrics and metrics['failed_thresholds']:
-            print(f"   ❌ Failed Thresholds: {metrics['failed_thresholds']}")
+            print(f"    Failed Thresholds: {metrics['failed_thresholds']}")
         
         if 'strengths' in metrics:
-            print(f"   ✅ Strengths: {metrics['strengths']}")
+            print(f"    Strengths: {metrics['strengths']}")
             
         if 'areas_for_improvement' in metrics:
-            print(f"   🔧 Areas for Improvement: {metrics['areas_for_improvement']}")
+            print(f"    Areas for Improvement: {metrics['areas_for_improvement']}")
 def main():
     try:
         tester = VoiceAgentTester(config.api_key)

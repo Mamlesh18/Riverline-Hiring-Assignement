@@ -1,9 +1,12 @@
-import requests
 import json
 import time
-from typing import List, Dict, Any
+from typing import Any, Dict, List
+
+import requests
+
 from config import config
 from log import logger
+
 
 class GeminiAPI:
     def __init__(self, api_key: str):
@@ -45,7 +48,8 @@ class MetricsAnalyzer:
             logger.error(f"Error initializing MetricsAnalyzer: {e}")
             raise
     
-    def create_metrics_prompt(self, conversation_history: List[str], persona_info: Dict[str, Any]) -> str:
+    def create_metrics_prompt(self, conversation_history: List[str], persona_info:
+                               Dict[str, Any]) -> str:
         try:
             conversation_text = '\n'.join(conversation_history)
             
@@ -60,7 +64,8 @@ Analyze and rate each metric from 0-100:
 3. NEGOTIATION_EFFECTIVENESS: Did agent offer extensions/alternatives when customer couldn't pay?
 4. OBJECTION_HANDLING_SCORE: How well did agent handle customer objections with empathy?
 5. RESOLUTION_SUCCESS_RATE: Did conversation end with clear next steps or resolution?
-6. REPETITION_ISSUES: Did agent repeat same phrases excessively? (0=no repetition, 100=highly repetitive)
+6. REPETITION_ISSUES: Did agent repeat same phrases excessively? (0=no repetition, 
+100=highly repetitive)
 7. RELEVANCE_SCORE: Did agent stay on topic? (0=irrelevant, 100=highly relevant)
 8. CONVERSATION_LENGTH: Number of total exchanges
 9. CUSTOMER_SATISFACTION: Based on customer responses, how satisfied did they seem? (0-100)
@@ -90,7 +95,8 @@ RETURN ONLY JSON in this exact format:
             logger.error(f"Error creating metrics prompt: {e}")
             return ""
     
-    def analyze_conversation(self, conversation_history: List[str], persona_info: Dict[str, Any]) -> Dict[str, Any]:
+    def analyze_conversation(self, conversation_history: List[str], 
+                             persona_info: Dict[str, Any]) -> Dict[str, Any]:
         try:
             time.sleep(2)
             

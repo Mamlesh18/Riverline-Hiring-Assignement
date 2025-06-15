@@ -1,8 +1,10 @@
 import json
 import os
 from datetime import datetime
-from typing import Dict, Any
+from typing import Any, Dict
+
 from log import logger
+
 
 class JSONSaver:
     def __init__(self):

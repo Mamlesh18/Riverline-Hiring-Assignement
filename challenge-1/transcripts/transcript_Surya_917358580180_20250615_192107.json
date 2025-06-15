@@ -1,0 +1,41 @@
+{
+  "session_id": "room-W7Y5JoERVohc",
+  "call_details": {
+    "phone_number": "+917358580180",
+    "debtor_name": "Surya",
+    "debt_amount": 15000.0,
+    "days_overdue": 45,
+    "call_start_time": "2025-06-15T19:20:42.865745",
+    "call_end_time": "2025-06-15T19:21:07.441057",
+    "call_duration": "0:00:24.575312"
+  },
+  "real_time_transcript": [],
+  "conversation_items": [
+    {
+      "timestamp": "2025-06-15T19:21:05.442364",
+      "type": "message",
+      "content": "id='item_e61ad3fc3887' type='message' role='assistant' content=['Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Surya?\\n'] interrupted=False hash=None created_at=1749995457.3788233",
+      "role": "assistant"
+    }
+  ],
+  "clean_conversation": [
+    {
+      "speaker": "agent",
+      "message": "Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Surya?",
+      "timestamp": "2025-06-15T19:21:05.442364"
+    }
+  ],
+  "complete_history": {
+    "items": [
+      {
+        "id": "item_e61ad3fc3887",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Surya?\n"
+        ],
+        "interrupted": false
+      }
+    ]
+  }
+}
