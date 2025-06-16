@@ -1,0 +1,145 @@
+{
+  "test_summary": {
+    "total_tests": 3,
+    "average_scores": {
+      "professionalism": 88.33,
+      "script_adherence": 93.33,
+      "negotiation_effectiveness": 76.67,
+      "objection_handling": 83.33,
+      "resolution_success": 73.33,
+      "overall_performance": 81.67
+    },
+    "threshold_pass_rate": 100.0
+  },
+  "individual_results": [
+    {
+      "persona": "Rajesh Kumar",
+      "personality": "cooperative_but_struggling",
+      "scenario": "Recently lost job, wants to pay but needs time",
+      "conversation_history": [
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. \nMay i speak with Rajesh Kumar?\n",
+        "Customer: Yes, this is Rajesh Kumar speaking. How can I help you today, Sarah?\n",
+        "Agent: \"I'm calling to remind you that your credit card bill of \u20b910,592.55 is currently 51 days overdue. Are you able to make the payment today?\"\n",
+        "Customer: Oh dear, 51 days overdue... I know I should pay, and I intend to. But, I just lost my job recently, so I'm a bit tight on funds at the moment, Sarah.\n",
+        "Agent: I understand. Would you be able to make the payment within the next 3 days? We can extend your deadline by 3 more days.\n",
+        "Customer: Oh, three days, hmm... That's helpful, thank you. I will certainly try my best to gather the funds and pay it off within those three days.\n",
+        "Agent: Thank you for confirming that, Rajesh Kumar. We appreciate your willingness to work with us. Have a great day!\n"
+      ],
+      "debt_details": {
+        "amount": 10592.554582632361,
+        "days_overdue": 51
+      },
+      "metrics": {
+        "professionalism_score": 90,
+        "script_adherence_score": 95,
+        "negotiation_effectiveness": 75,
+        "objection_handling_score": 85,
+        "resolution_success_rate": 70,
+        "repetition_issues": 10,
+        "relevance_score": 100,
+        "conversation_length": 8,
+        "customer_satisfaction": 75,
+        "compliance_score": 95,
+        "overall_performance": 83,
+        "meets_thresholds": true,
+        "areas_for_improvement": [
+          "resolution tactics",
+          "negotiation skills"
+        ],
+        "strengths": [
+          "professional tone",
+          "script adherence",
+          "empathetic response"
+        ],
+        "failed_thresholds": []
+      },
+      "timestamp": "2025-06-16T10:38:27.527166"
+    },
+    {
+      "persona": "Priya Sharma",
+      "personality": "aggressive_defensive",
+      "scenario": "Frustrated with bank, claims payment was made",
+      "conversation_history": [
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May i speak with Priya Sharma?\n",
+        "Customer: \"Yes, this is Priya Sharma. What's this about? I already *paid* that bill, you better not be calling me about a late payment!\"\n",
+        "Agent: \"I'm calling to remind you that your credit card bill of \u20b928,127.36 is currently 40 days overdue. Are you able to make the payment today?\"\n",
+        "Customer: \"Are you *kidding* me right now? I told you I paid it! I'm not paying it again, and frankly, I'm insulted you'd even call me about this.\"\n",
+        "Agent: I understand this might be frustrating. I'm here to help find a solution that works for you. Would you be able to make the payment within the next 3 days? We can extend your deadline by 3 more days.\n",
+        "Customer: \"Oh, so now you're *helping*? This is ridiculous! I've already told you I paid! Don't try to placate me with your extra days, I'm not paying *anything*!\"\n",
+        "Agent: I completely understand your situation. Our human agent will be calling you shortly to help rectify this matter and discuss available options. Thank you for your time.\n"
+      ],
+      "debt_details": {
+        "amount": 28127.357342073246,
+        "days_overdue": 40
+      },
+      "metrics": {
+        "professionalism_score": 85,
+        "script_adherence_score": 90,
+        "negotiation_effectiveness": 75,
+        "objection_handling_score": 80,
+        "resolution_success_rate": 70,
+        "repetition_issues": 15,
+        "relevance_score": 95,
+        "conversation_length": 8,
+        "customer_satisfaction": 20,
+        "compliance_score": 95,
+        "overall_performance": 76,
+        "meets_thresholds": true,
+        "areas_for_improvement": [
+          "Customer satisfaction",
+          "resolution tactics",
+          "Negotiation Effectiveness"
+        ],
+        "strengths": [
+          "Professional tone",
+          "Script Adherence",
+          "Compliance"
+        ],
+        "failed_thresholds": []
+      },
+      "timestamp": "2025-06-16T10:38:51.529542"
+    },
+    {
+      "persona": "Amit Patel",
+      "personality": "avoidant_evasive",
+      "scenario": "Tries to avoid payment, makes excuses",
+      "conversation_history": [
+        "Agent: Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Amit Patel?\n",
+        "Customer: Uh, yeah, this is Amit. Look, is this a bad time? I was just... uh... really busy right now. Can I call you back?\n",
+        "Agent: \"I understand this might be frustrating. I'm here to help find a solution that works for you. I'm calling to remind you that your credit card bill of \u20b926,476.70 is currently 56 days overdue. Would you be able to make the payment within the next 3 days? We can extend your deadline by 3 more days.\"\n",
+        "Customer: Oh, wow, 56 days? Seriously? Look, things have been... complicated lately. Let me see, uh... can we talk about this later? Maybe next week?\n",
+        "Agent: I understand your situation. Given the circumstances, I can certainly offer a payment extension. Would making the payment by next Monday work for you?\nCan I have your confirmation that this timeline works for you?\nSo to confirm, you'll make the payment by next Monday. I'll send you a confirmation SMS shortly. I'll call you on Tuesday to confirm the payment was processed.\n\nThank you for your time.\n"
+      ],
+      "debt_details": {
+        "amount": 32343.131875737534,
+        "days_overdue": 37
+      },
+      "metrics": {
+        "professionalism_score": 90,
+        "script_adherence_score": 95,
+        "negotiation_effectiveness": 80,
+        "objection_handling_score": 85,
+        "resolution_success_rate": 80,
+        "repetition_issues": 10,
+        "relevance_score": 100,
+        "conversation_length": 8,
+        "customer_satisfaction": 70,
+        "compliance_score": 95,
+        "overall_performance": 86,
+        "meets_thresholds": true,
+        "areas_for_improvement": [
+          "customer satisfaction could be better"
+        ],
+        "strengths": [
+          "script adherence",
+          "professionalism",
+          "negotiation skills"
+        ],
+        "failed_thresholds": []
+      },
+      "timestamp": "2025-06-16T10:39:41.395759"
+    }
+  ],
+  "test_timestamp": "2025-06-16T10:39:41.402287",
+  "total_conversations": 3
+}

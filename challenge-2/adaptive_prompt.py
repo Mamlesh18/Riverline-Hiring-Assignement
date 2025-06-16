@@ -88,6 +88,7 @@ class AdaptivePromptManager:
                 updated_prompt = base_prompt + improvement_section
             
             logger.info("Prompt updated with improvements")
+            print("Updated prompt",updated_prompt)
             return updated_prompt
         except Exception as e:
             logger.error(f"Error updating prompt: {e}")

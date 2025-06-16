@@ -1,0 +1,38 @@
+2025-06-16 10:32:48,433 - voice_agent_tester - INFO - Configuration loaded successfully
+2025-06-16 10:32:48,471 - voice_agent_tester - INFO - JSONSaver initialized successfully
+2025-06-16 10:32:49,491 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-16 10:32:49,491 - voice_agent_tester - INFO - Generated 3 customer personas
+2025-06-16 10:32:49,491 - voice_agent_tester - INFO - GeminiAPI initialized successfully
+2025-06-16 10:32:49,492 - voice_agent_tester - INFO - MetricsAnalyzer initialized successfully
+2025-06-16 10:32:49,492 - voice_agent_tester - INFO - ConversationSimulator initialized successfully
+2025-06-16 10:32:49,494 - voice_agent_tester - INFO - VoiceAgentTester initialized successfully
+2025-06-16 10:32:49,496 - voice_agent_tester - INFO - Generated system instructions for user: Rajesh Kumar
+2025-06-16 10:33:18,744 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-16 10:33:21,359 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-16 10:33:21,359 - voice_agent_tester - INFO - Conversation simulation completed for Rajesh Kumar
+2025-06-16 10:33:21,361 - voice_agent_tester - INFO - Generated system instructions for user: Priya Sharma
+2025-06-16 10:33:56,915 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-16 10:33:59,561 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-16 10:33:59,563 - voice_agent_tester - INFO - Conversation simulation completed for Priya Sharma
+2025-06-16 10:33:59,567 - voice_agent_tester - INFO - Identified failed metrics: ['professionalism_score', 'negotiation_effectiveness', 'objection_handling_score', 'resolution_success_rate']
+2025-06-16 10:33:59,567 - voice_agent_tester - INFO - Generated 12 improvement strategies
+2025-06-16 10:33:59,568 - voice_agent_tester - INFO - Generated system instructions for user: Priya Sharma
+2025-06-16 10:33:59,568 - voice_agent_tester - INFO - Prompt updated with improvements
+2025-06-16 10:35:23,945 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-16 10:35:25,749 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-16 10:35:25,749 - voice_agent_tester - INFO - Conversation simulation completed for Priya Sharma
+2025-06-16 10:35:25,752 - voice_agent_tester - INFO - Identified failed metrics: ['resolution_success_rate']
+2025-06-16 10:35:25,752 - voice_agent_tester - INFO - Generated 3 improvement strategies
+2025-06-16 10:35:25,752 - voice_agent_tester - INFO - Prompt updated with improvements
+2025-06-16 10:36:43,812 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-16 10:36:45,637 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-16 10:36:45,637 - voice_agent_tester - INFO - Conversation simulation completed for Priya Sharma
+2025-06-16 10:36:45,639 - voice_agent_tester - INFO - Generated system instructions for user: Amit Patel
+2025-06-16 10:37:09,448 - voice_agent_tester - INFO - Metrics prompt created successfully
+2025-06-16 10:37:10,892 - voice_agent_tester - INFO - Conversation analysis completed successfully
+2025-06-16 10:37:10,892 - voice_agent_tester - INFO - Conversation simulation completed for Amit Patel
+2025-06-16 10:37:10,894 - voice_agent_tester - INFO - Summary generated successfully
+2025-06-16 10:37:10,895 - voice_agent_tester - INFO - Test suite completed with 3 conversations
+2025-06-16 10:37:10,896 - voice_agent_tester - INFO - Summary printed successfully
+2025-06-16 10:37:10,899 - voice_agent_tester - INFO - Results saved to: results\voice_agent_test_results_20250616_103710.json
+2025-06-16 10:37:10,901 - voice_agent_tester - INFO - Main execution completed successfully

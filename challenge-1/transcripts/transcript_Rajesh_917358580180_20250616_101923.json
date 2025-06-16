@@ -1,0 +1,77 @@
+{
+  "session_id": "room-8VdxwvRnrCrW",
+  "call_details": {
+    "phone_number": "+917358580180",
+    "debtor_name": "Rajesh",
+    "debt_amount": 5000.0,
+    "days_overdue": 5,
+    "call_start_time": "2025-06-16T10:19:08.812688",
+    "call_end_time": "2025-06-16T10:19:23.597301",
+    "call_duration": "0:00:14.784613"
+  },
+  "real_time_transcript": [
+    {
+      "timestamp": "2025-06-16T10:19:17.881004",
+      "speaker": "user",
+      "text": "So you",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:18.906936",
+      "speaker": "user",
+      "text": "So if I pick up the call,",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:19.138401",
+      "speaker": "user",
+      "text": "So if I pick up the call,",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:22.158814",
+      "speaker": "user",
+      "text": "you can see that",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:23.143482",
+      "speaker": "user",
+      "text": "you can see that, like, uh, caller",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    }
+  ],
+  "conversation_items": [
+    {
+      "timestamp": "2025-06-16T10:19:19.203525",
+      "type": "message",
+      "content": "id='item_50bbfca99042' type='message' role='user' content=['So if I pick up the call,'] interrupted=False hash=None created_at=1750049359.2015269",
+      "role": "user"
+    }
+  ],
+  "clean_conversation": [
+    {
+      "speaker": "user",
+      "message": "So if I pick up the call,",
+      "timestamp": "2025-06-16T10:19:19.203525"
+    }
+  ],
+  "complete_history": {
+    "items": [
+      {
+        "id": "item_50bbfca99042",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "So if I pick up the call,"
+        ],
+        "interrupted": false
+      }
+    ]
+  }
+}

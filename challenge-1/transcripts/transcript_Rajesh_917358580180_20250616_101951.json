@@ -1,0 +1,220 @@
+{
+  "session_id": "room-8VdxwvRnrCrW",
+  "call_details": {
+    "phone_number": "+917358580180",
+    "debtor_name": "Rajesh",
+    "debt_amount": 5000.0,
+    "days_overdue": 5,
+    "call_start_time": "2025-06-16T10:19:08.812688",
+    "call_end_time": "2025-06-16T10:19:51.598254",
+    "call_duration": "0:00:42.785566"
+  },
+  "real_time_transcript": [
+    {
+      "timestamp": "2025-06-16T10:19:17.881004",
+      "speaker": "user",
+      "text": "So you",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:18.906936",
+      "speaker": "user",
+      "text": "So if I pick up the call,",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:19.138401",
+      "speaker": "user",
+      "text": "So if I pick up the call,",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:22.158814",
+      "speaker": "user",
+      "text": "you can see that",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:23.143482",
+      "speaker": "user",
+      "text": "you can see that, like, uh, caller",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:24.179979",
+      "speaker": "user",
+      "text": "you can see that, like, uh, call has been enabled.",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:34.694317",
+      "speaker": "user",
+      "text": "Yeah.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:35.706164",
+      "speaker": "user",
+      "text": "Hey. Yeah. Hi, Sarah. You're",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:36.702988",
+      "speaker": "user",
+      "text": "Hey. Yeah. Hi, Sarah. You're speaking with Rajesh.",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:37.714458",
+      "speaker": "user",
+      "text": "Hey. Yeah. Hi, Sarah. You're speaking with Rajesh.",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:37.739483",
+      "speaker": "user",
+      "text": "Please tell me what's the issue",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:38.054223",
+      "speaker": "user",
+      "text": "Please tell me what's the issue?",
+      "is_final": true,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:50.130712",
+      "speaker": "user",
+      "text": "Oh, yeah. So the",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:51.148990",
+      "speaker": "user",
+      "text": "Oh, yeah. So that completely forward",
+      "is_final": false,
+      "event_type": "UserInputTranscribedEvent"
+    }
+  ],
+  "conversation_items": [
+    {
+      "timestamp": "2025-06-16T10:19:19.203525",
+      "type": "message",
+      "content": "id='item_50bbfca99042' type='message' role='user' content=['So if I pick up the call,'] interrupted=False hash=None created_at=1750049359.2015269",
+      "role": "user"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:24.183001",
+      "type": "message",
+      "content": "id='item_58ed4b279e13' type='message' role='user' content=['you can see that, like, uh, call has been enabled.'] interrupted=False hash=None created_at=1750049364.1830018",
+      "role": "user"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:31.787780",
+      "type": "message",
+      "content": "id='item_9b02e13f5ad8' type='message' role='assistant' content=['Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Rajesh?\\n'] interrupted=False hash=None created_at=1750049364.1941335",
+      "role": "assistant"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:38.081576",
+      "type": "message",
+      "content": "id='item_3b90ecacd1d7' type='message' role='user' content=[\"Hey. Yeah. Hi, Sarah. You're speaking with Rajesh. Please tell me what's the issue?\"] interrupted=False hash=None created_at=1750049378.0805607",
+      "role": "user"
+    },
+    {
+      "timestamp": "2025-06-16T10:19:47.508068",
+      "type": "message",
+      "content": "id='item_38aa3bfa9a62' type='message' role='assistant' content=[\"I'm calling to remind you that your credit card bill of ₹5,000.00 is currently 5 days overdue. Are you able to make the payment today?\\n\"] interrupted=False hash=None created_at=1750049378.0918922",
+      "role": "assistant"
+    }
+  ],
+  "clean_conversation": [
+    {
+      "speaker": "user",
+      "message": "So if I pick up the call,",
+      "timestamp": "2025-06-16T10:19:19.203525"
+    },
+    {
+      "speaker": "user",
+      "message": "you can see that, like, uh, call has been enabled.",
+      "timestamp": "2025-06-16T10:19:24.183001"
+    },
+    {
+      "speaker": "agent",
+      "message": "Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Rajesh?",
+      "timestamp": "2025-06-16T10:19:31.787780"
+    },
+    {
+      "speaker": "user",
+      "message": "Hey. Yeah. Hi, Sarah. You're speaking with Rajesh. Please tell me what's the issue?",
+      "timestamp": "2025-06-16T10:19:38.081576"
+    },
+    {
+      "speaker": "agent",
+      "message": "I'm calling to remind you that your credit card bill of ₹5,000.00 is currently 5 days overdue. Are you able to make the payment today?",
+      "timestamp": "2025-06-16T10:19:47.508068"
+    }
+  ],
+  "complete_history": {
+    "items": [
+      {
+        "id": "item_50bbfca99042",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "So if I pick up the call,"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_58ed4b279e13",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "you can see that, like, uh, call has been enabled."
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_9b02e13f5ad8",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "Hello, This is Sarah calling from Riverline Bank regarding your credit card bill. May I speak with Rajesh?\n"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_3b90ecacd1d7",
+        "type": "message",
+        "role": "user",
+        "content": [
+          "Hey. Yeah. Hi, Sarah. You're speaking with Rajesh. Please tell me what's the issue?"
+        ],
+        "interrupted": false
+      },
+      {
+        "id": "item_38aa3bfa9a62",
+        "type": "message",
+        "role": "assistant",
+        "content": [
+          "I'm calling to remind you that your credit card bill of ₹5,000.00 is currently 5 days overdue. Are you able to make the payment today?\n"
+        ],
+        "interrupted": false
+      }
+    ]
+  }
+}
